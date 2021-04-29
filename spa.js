@@ -3,7 +3,7 @@
 function hideAllPages() {
     let pages = document.querySelectorAll(".page");
     for (let page of pages) {
-        page.getElementsByClassName.display = "none";
+        page.style.display = "none";
     }
 }
 
