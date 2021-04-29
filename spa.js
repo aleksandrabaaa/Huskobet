@@ -23,3 +23,8 @@ function setActiveTab(pageId) {
         }
     }
 }
+
+function navigateTo("href") { 
+    location.href = `#${pageId}`;
+}
+
