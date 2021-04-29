@@ -24,14 +24,14 @@ function setActiveTab(pageId) {
     }
 }
 
-function navigateTo("href") { 
+function navigateTo(pageId) { 
     location.href = `#${pageId}`;
 }
 
 function pageChange() {
     let page = "home";
-    if (location.pageId) { 
-        page = location.pageId.slice(1);
+    if (location.hash) { 
+        page = location.hash.slice(1);
     }
     showPage(page);
 }
