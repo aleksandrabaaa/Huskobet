@@ -28,3 +28,11 @@ function navigateTo("href") {
     location.href = `#${pageId}`;
 }
 
+function pageChange() {
+    let page = "home";
+    if (location.pageId) { 
+        page = location.pageId.slice(1);
+    }
+    showPage(page);
+}
+pageChange();
