@@ -1,0 +1,37 @@
+:root {
+    --navyblue: #002173;
+    --lightblue: #E9F6FD;
+    --green: #2BDE8D;
+    --orange: #FFC014;
+    --red: #DB3A2A;
+}
+
+body {
+    margin: 0;
+}
+
+.tabbar {
+    height: 100%;
+    width: 324px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 56px;
+    background: var(--navyblue);
+    box-shadow: 5px 0px 8px rgba(0, 67, 101, 0.25);
+}
+
+.tabbar a {
+    padding-left: 40px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    display: block;
+}
