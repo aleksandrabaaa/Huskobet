@@ -147,11 +147,12 @@ h4 {
 .home-cases {
     margin: 0;
     max-width: 840px;
+    color: var(--navyblue);
 }
 
-.home-cases a {
+/* .home-cases a {
     float: right;
-}
+} */
 
 .updates-box {
     width: 380px;
@@ -314,7 +315,7 @@ h4 {
     padding: 12px;
     
     background: white;
-    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
+    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.16);
     border-radius: 20px;
     border: none;
 }
