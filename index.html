@@ -25,15 +25,26 @@
         margin-right: 16px;"></span>Profile</a>
 </nav>
 
-<div class="topnav">
+<!-- <div class="topnav">
+    <div class="topnav-elements">
     <p>User name</p>
-    <span class="iconify" data-inline="false" data-icon="carbon:event-schedule"></span>
-    <span class="iconify" data-inline="false" data-icon="carbon:help"></span>    
-    <span class="iconify" data-inline="false" data-icon="carbon:login"></span>
-</div>
+         <span class="iconify" data-inline="false" data-icon="carbon:event-schedule"></span>
+        <span class="iconify" data-inline="false" data-icon="carbon:help"></span>    
+        <span class="iconify" data-inline="false" data-icon="carbon:login"></span> 
+    </div>
+</div> -->
 <!-- <nav id="tabbar" class="tabbar hide">
     <div id="menuToggle"></div> 
 </nav>-->
+
+<div class="header">
+    <ul id="navlist">
+      <li id="active">User name</li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:event-schedule"></span></li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:help"></span></li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:login"></span></li>
+    </ul>
+  </div>
 
 <!-----home----->
 <section id="home" class="page">
@@ -286,9 +297,10 @@
                 <label>New password</label><br>
                 <input type="text" name="newpassword" value="New password"><br>
                 </span>
-
-                <!-- <input type="submit" value="Submit"> -->
               </form> 
+            
+          <button type="submit">Save the changes</button>
+
         </div>
     </div>
 </section>
