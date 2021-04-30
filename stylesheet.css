@@ -32,7 +32,6 @@ h2 {
     font-size: 1.5em;
     color: var(--navyblue);
     margin: 0;
-    display: inline-block;
 }
 
 h3 {
@@ -41,6 +40,13 @@ h3 {
     font-weight: bold;
     font-size: 1.25em;
     color: var(--navyblue);
+}
+
+h4 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 /* side navigation desktop */
@@ -123,6 +129,15 @@ h3 {
 }
 
 /* home content */
+#home h2 {
+    display: inline-block;
+}
+
+/* cases content */
+#cases h2 {
+    display: inline-block;
+}
+
 .home-wrapper {  
     margin-left: 264px;
     margin-top: 80px;
@@ -214,4 +229,94 @@ h3 {
 
 .service-box p {
     font-size: 1em;
+}
+
+/* profile content */
+.profile-wrapper {  
+    margin-left: 264px;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.profile-nav {
+    width: auto;
+    height: 524px;
+    margin-right: 32px;
+    padding: 24px 16px;
+    float: left;
+
+    background: white;
+    border-radius: 20px;
+}
+
+.profile-element {
+    width: 324px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 24px;
+
+    background: white;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+    border-radius: 32px;
+}
+
+#profile h4 {
+    color: var(--navyblue);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.headline-icon {
+    color: var(--navyblue); 
+    font-size: 2em; 
+    vertical-align: bottom;
+    margin-right: 16px;
+}
+
+.arrow {
+    color: var(--navyblue); font-size: 2em;
+}
+
+.personal-data {
+    width: 768px;
+    height: 524px;
+    /* height: 842px; */
+    padding: 24px 16px;
+    float: left;
+
+    background: white;
+    border-radius: 20px;
+}
+
+.personal-data label {
+    font-size: 1em;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--navyblue);
+}
+
+.personal-data input {
+    font-size: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(0,33,115,0.3);
+    width: 348px;
+    padding: 12px;
+    
+    background: white;
+    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
+    border-radius: 20px;
+    border: none;
+}
+
+.personal-data span {
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px;
 }
