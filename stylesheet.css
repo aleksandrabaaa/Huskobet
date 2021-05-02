@@ -332,7 +332,7 @@ h4 {
 .personal-data button {
     float: right;
     margin-top: 24px;
-    padding: 16px 32px;
+    padding: 16px;
     width: auto;
     height: auto;
     font-family: Raleway;
@@ -402,6 +402,10 @@ li {
     margin: 0;
 }
 
+#case-example h3 {
+    display: inline-block;
+}
+
 .advisor-info {
     width: 100%;
     height: 80px;
@@ -427,16 +431,31 @@ li {
     width: 40%;
     height: auto;
     float: left;
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 
 .files-white-box {
     width: 100%;
     height: 648px;
-    padding: 12px 12px 0 12px;
+    /* padding: 12px 12px 0 12px; */
+    margin-top: 24px;
+    margin-bottom: 32px;
 
     background: white;
     border-radius: 20px;
+}
+
+.files-content {
+    padding: 12px;
+}
+
+.document {
+    display: inline-block;
+    margin-right: 88px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: .75em;
 }
 
 .file-example {
@@ -458,31 +477,103 @@ li {
     margin-right: 48px;
 }
 
+.search-upload-btn {
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    float: right;
+
+    border-radius: 50%;
+    background: white;
+}
+
+.search-upload-btn:hover {
+    opacity: .8;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*dropdown*/
+.dropdown {
+    /* position: relative; */
+    /* display: inline-block; */
+    float: right;
+  }
+
+.dropbtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    width: 164px;
+    height: 40px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--navyblue);
+
+    background: white;
+    border-radius: 20px;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 8px;
+    min-width: 164px;
+    overflow: auto;
+    z-index: 1;
+
+    background: white;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+    border-radius: 20px;
+  }
+
+.dropdown-content a {
+    color: var(--navyblue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.show {
+    display: block;
+}
+
 .calendar-container {
     width: 25%;
     height: auto;
     float: left;
-    margin: 0 16px;
+    margin-left: 24px;
 }
 
 .calendar-white-box {
     width: 100%;
     height: 648px;
     /* padding: 24px 16px; */
+    margin-top: 24px;
 
     background: white;
     border-radius: 20px;
 }
 
 .chat-container {
-    width: 30%;
+    width: 31%;
     height: auto;
     float: left;
+    margin-left: 24px;
 }
 
 .chat-box {
     width: 100%;
     height: 648px;
+    margin-top: 24px;
 
     background: white;
     border-radius: 20px;

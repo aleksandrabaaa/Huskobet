@@ -225,7 +225,27 @@
 
             <div class="files-container">
                 <h3>Files</h3>
+                
+                <!-- Dropdown-->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Sort by<span class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Type</a>
+                      <a href="#">Name</a>
+                      <a href="#">Date</a>
+                    </div>
+                  </div>
+
+                  <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+                  <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" data-flip="horizontal" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+
                 <div class="files-white-box">
+                    <div class="files-content">
+                    <p class="document">Type</p>
+                    <p class="document">Name</p>
+                    <p class="document">Date</p>
 
                     <div class="file-example">
                         <div>
@@ -263,6 +283,7 @@
                         </div>
                     </div>
 
+                </div>
                 </div>
             </div>
 
@@ -384,6 +405,26 @@
 
 <!-----icons----->
 <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+<!--dropdown-->
+<script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </body>
 
