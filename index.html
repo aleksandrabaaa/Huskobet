@@ -228,7 +228,7 @@
                 
                 <!-- Dropdown-->
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Sort by<span class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                    <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
                     <div id="myDropdown" class="dropdown-content">
                       <a href="#">Type</a>
                       <a href="#">Name</a>
@@ -295,19 +295,20 @@
 
             <div class="chat-container">
                 <h3>Chat</h3>
+
                     <div class="chat-box">
-
-                        <!-- <p style="float: right;">00/00/00</p> -->
-                        <div class="message-box">
-                        <img src="/img/huskobet-blue.png">
                         
-                            <div class="message-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                A, felis mattis quis massa at.</p>
+                        <div class="message-container">
+                            <p>00/00/00</p>
+                            <div class="message-box">
+                                <img src="/img/huskobet-blue.png">
+                                    <div class="message-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        A, felis mattis quis massa at.</p>
+                                    </div>
                             </div>
+                            
                         </div>
-                        
-
                         <!-- <span class="iconify" data-inline="false" data-icon="carbon:send" style="position: absolute;"></span> -->
                         <input type="text" name="message" value="Write a message here" class="message-input">
                     </div>
@@ -329,22 +330,22 @@
         <div class="profile-box">
             <h2>Profile</h2>
                 <div class="profile-nav">
-                    <div class="profile-element">
-                        <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:identification"></span>Personal data</h4>
-                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
+                    <div class="profile-element" style="background: #002173;">
+                        <h4 style="color: white;"><span class="iconify headline-icon" data-inline="false" data-icon="carbon:identification" style="color: white;"></span>Personal data</h4>
+                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="color: white;"></span>
                     </div>
 
-                    <div class="profile-element">
+                    <div class="profile-element profile-hover">
                         <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:notification"></span>Notifications</h4>
                         <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
                     </div>
 
-                    <div class="profile-element">
+                    <div class="profile-element profile-hover">
                         <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:settings-adjust"></span>Preferences</h4>
                         <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
                     </div>
 
-                    <div class="profile-element">
+                    <div class="profile-element profile-hover">
                         <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:settings"></span>Settings</h4>
                         <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
                     </div>

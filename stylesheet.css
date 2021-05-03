@@ -271,6 +271,13 @@ h4 {
     border-radius: 32px;
 }
 
+.profile-hover:hover {
+    /* opacity: .7; */
+    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
+    transition: .7s;
+    cursor: pointer;
+}
+
 #profile h4 {
     color: var(--navyblue);
     margin: 0;
@@ -346,6 +353,11 @@ h4 {
     border-radius: 32px;
 }
 
+.personal-data button:hover {
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
 
 .header {
     clear: both;
@@ -542,6 +554,11 @@ li {
     display: block;
   }
 
+  .dropdown-content a:hover {
+      font-weight: bold;
+      transition: .3s;
+  }
+
 .show {
     display: block;
 }
@@ -583,8 +600,20 @@ li {
 }
 
 .chat-box img {
-    width: 12%;
+    width: 15%;
     float: left;
+}
+
+.message-container {
+    width: 340px; 
+    margin-top: auto;
+    margin-bottom: -322px;
+}
+
+.message-container p {
+    float: right; 
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .message-box {
@@ -599,8 +628,9 @@ li {
     width: 280px;
     margin-left: 16px;
     padding: 16px;
+    color: white;
 
-    background: white;
+    background: var(--navyblue);
     box-shadow: 0px 5px 8px rgb(0 67 101 / 25%);
     border-radius: 32px;
 }
