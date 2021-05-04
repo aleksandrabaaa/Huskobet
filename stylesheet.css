@@ -31,7 +31,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
     color: var(--navyblue);
-    margin: 0 0 8px 0;
+    margin: 0 0 24px 0;
 }
 
 h3 {
@@ -109,7 +109,7 @@ h4 {
     float: right;
     display: flex;
     align-items: center;
-    padding: 24px;
+    padding: 24px 0;
     margin: 0 auto;
 }
 
@@ -184,7 +184,7 @@ li {
     padding: 16px;
     margin-bottom: 24px;
     display: flex;
-    align-items: center;
+    align-items: end;
 
     background: white;
     box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
@@ -693,10 +693,10 @@ li {
 
 .gratis-services-box {
     width: 400px;
-    height: 984px;
+    height: 456px;
     float: right;
     /* background: white; */
-    padding: 70px 16px 0 16px;
+    padding: 84px 32px 0 16px;
 }
 
 .service-example {
@@ -730,11 +730,62 @@ li {
     flex-direction: row; */
 }
 .discount-example, .test-example {
-    width: 196px;
-    height: 196px;
+    /* width: 196px;
+    height: 196px; */
+    width: 164px;
+    height: 164px;
     display: inline-block;
+    text-align: center;
     margin-right: 8px;
+    padding: 16px;
 
     background: white;
     border-radius: 32px;
+}
+
+.discount-example p:nth-child(2) {
+    font-weight: bolder;
+    margin: 8px 0;
+}
+
+.discount-example p:nth-child(3) {
+    margin: 0 0 8px 0;
+}
+
+.discount-example img {
+    width: 20%;
+}
+
+.test-example p {
+    margin: 8px 0;
+}
+
+.articles-container {
+    max-width: 1255px;
+    margin: 24px 0 0 0;
+}
+
+.article-example {
+    width: 268px;
+    height: 348px;
+    margin-right: 8px;
+    padding: 16px;
+    float: left;
+    /* display: inline-block; */
+    text-align: center;
+
+    background: white;
+    border-radius: 30px;
+}
+
+.article-example img {
+    text-align: center;
+    max-width: 268px;
+
+    border-radius: 30px;
+}
+
+.article-example h4 {
+    font-size: 1.25em;
+    margin: 16px 0 0 0;
 }
