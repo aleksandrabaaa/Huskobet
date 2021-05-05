@@ -239,7 +239,7 @@
 
 <!-----case example----->
 <section id="case-example" class="page">
-    <div class="wrapper">
+    <div class="wrapper case-wrapper">
         <h2>Case example</h2>
         <a href="#cases" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the cases</a>
 
@@ -257,7 +257,7 @@
             <div class="files-container">
                 <h3>Files</h3>
                 
-                <!-- Dropdown-->
+                <!-- extra features -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
                     <div id="myDropdown" class="dropdown-content">
@@ -346,6 +346,91 @@
                         <input type="text" onfocus="this.value=''" name="message" value="Write a message here" class="message-input">
                     </div>
             </div>
+
+        </div>
+
+        <!-- mobile nav -->
+        <div class="case-navigation">
+            <a href="#advisor-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:tool-box"></span>Advisor</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#files-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:document"></span>Files</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#calendar-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:event-schedule"></span>Calendar</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#chat-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:chat"></span>Chat</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- mobile case example-advisor -->
+<section id="advisor-mobile" class="page">
+    <div class="wrapper-mobile">
+        <h3>Advisor</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
+            <p><span>Company:</span><br>Company name</p>
+            <p><span>Advisor:</span><br>Advisor name</p>
+            <p><span>Email:</span><br>Email</p>
+            <p><span>Phone number:</span><br>Phone number</p>
+            <p><span>Website:</span><br>Website</p>
+        </div>
+    </div>
+</section>
+
+<!-- mobile case example-files -->
+<section id="files-mobile" class="page">
+    <div class="wrapper-mobile">
+        <h3>Files</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <!-- extra features -->
+        <div style="margin-top: 24px; display: flow-root;">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Type</a>
+              <a href="#">Name</a>
+              <a href="#">Date</a>
+            </div>
+          </div>
+
+          <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+          <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+        </div>
+        <div class="mobile-white-bcg">
+
+        </div>
+    </div>
+</section>
+
+<!-- mobile case example-calendar -->
+<section id="calendar-mobile" class="page">
+    <div class="wrapper-mobile">
+        <h3>Calendar</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
+
+        </div>
+    </div>
+
+</section>
+
+<!-- mobile case example-chat -->
+<section id="chat-mobile" class="page">
+    <div class="wrapper-mobile">
+        <h3>Chat</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
 
         </div>
     </div>

@@ -340,7 +340,8 @@ li {
 }
 
 .arrow {
-    color: var(--navyblue); font-size: 2em;
+    color: var(--navyblue); 
+    font-size: 2em;
 }
 
 .personal-data {
@@ -801,14 +802,37 @@ li {
         background: white;
         padding: 32px 16px 0 16px;
     }
+
+    .case-navigation {
+        display: none;
+    }
 }
 
 /* mobile screen */
 @media (max-width: 375px) {
+/* mobile general */
     .page {
         min-height: calc(100vh - 110px);
         animation: fadeIn 0.4s;
         padding: 55px 0;
+    }
+
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper-mobile {
+        padding: 32px 16px 0 16px;
+        height: 100vh;
+    }
+
+    .mobile-white-bcg {
+        width: 100%;
+        height: 100%;
+        margin-top: 24px;
+
+        background: #FFFFFF;
+        border-radius: 20px;
     }
 
     .tabbar {
@@ -840,11 +864,16 @@ li {
         display: none;
     }
 
-    .wrapper {
+    .header {
         display: none;
     }
 
-    .header {
+    span {
+        font-weight: bold;
+    }
+
+/* mobile home */
+    #home .home-cases, .home-services {
         display: none;
     }
 
@@ -853,4 +882,78 @@ li {
         float: right;
         padding: 32px 16px 0 16px;
     }
+
+/* mobile cases */
+    #cases .updates-box {
+        display: none;
+    }
+
+    #cases .home-cases {
+        padding: 32px 16px 0 16px;
+    }
+
+    #cases .case-box {
+        width: 100%;
+        height: auto;
+    }
+
+    #cases .case-box p {
+        display: block;
+        padding: 12px 0 0 16px;
+        margin: 0;
+    }
+
+/* mobile case example */
+    #case-example .advisor-info, .case-content {
+        display: none;
+    }
+
+    #case-example h2 {
+        margin: 0;
+    }
+
+    #case-example h4 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .case-wrapper {
+        padding: 32px 16px 0 16px;
+    }
+
+    .case-navigation a {
+        text-decoration: none;
+    }
+
+    .case-navigation a:nth-child(1) {
+        margin-top: 24px;
+    }
+
+    .case-nav-element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 16px;
+        margin-bottom: 16px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+        border-radius: 32px;
+    }
+
+/* mobile case example-advisor info */
+    #advisor-mobile p {
+        display: block;
+        padding: 12px 0 0 16px;
+        margin: 0;
+    }
+
+    #advisor-mobile p:nth-child(5) {
+        padding-bottom: 12px;
+    }
+
+/* mobile case example-files */
+
 }
