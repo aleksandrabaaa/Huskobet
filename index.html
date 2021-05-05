@@ -8,6 +8,10 @@
     <meta name="description" content="Huskobet, user dashboard">
     <meta name="author" content="Aleksandra Wytulany">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body onhashchange="pageChange()">
@@ -436,6 +440,8 @@
     </div>
 </section>
 
+
+
 <!-----member club----->
 <section id="memberclub" class="page">
     
@@ -471,7 +477,7 @@
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper wrapper-memberclub-mobile">
         <h2>Member club</h2>
 
             <!-- Discounts -->
@@ -479,35 +485,33 @@
                 <h3>Discounts</h3>
                 <div class="discount-example">
                     <img src="/img/spotify-logo.png" alt="Spotify logo">
-                    <p>Spotify</p>
-                    <p>Get free access to premium accoutn for a month</p>
+                    <p class="discount-headline">Spotify</p>
+                    <p style="margin: 0 0 8px 0;">Get free access to premium accoutn for a month</p>
                     <a href="#">Get access</a>
                 </div>
                 <div class="discount-example">
                     <img src="/img/spotify-logo.png" alt="Spotify logo">
-                    <p>Spotify</p>
-                    <p>Get free access to premium accoutn for a month</p>
+                    <p class="discount-headline">Spotify</p>
+                    <p style="margin: 0 0 8px 0;">Get free access to premium accoutn for a month</p>
                     <a href="#">Get access</a>
                 </div>
                 <div class="discount-example">
                     <img src="/img/spotify-logo.png" alt="Spotify logo">
-                    <p>Spotify</p>
-                    <p>Get free access to premium accoutn for a month</p>
+                    <p class="discount-headline">Spotify</p>
+                    <p style="margin: 0 0 8px 0;">Get free access to premium accoutn for a month</p>
                     <a href="#">Get access</a>
                 </div>
                 <div class="discount-example">
                     <img src="/img/spotify-logo.png" alt="Spotify logo">
-                    <p>Spotify</p>
-                    <p>Get free access to premium accoutn for a month</p>
+                    <p class="discount-headline">Spotify</p>
+                    <p style="margin: 0 0 8px 0;">Get free access to premium accoutn for a month</p>
                     <a href="#">Get access</a>
                 </div>
-                <!-- <div class="discount-example"></div>
-                <div class="discount-example"></div>
-                <div class="discount-example"></div> -->
+    
             </div>
 
             <!-- Tests -->
-            <div class="test-container" style="margin-top: 16px;">
+            <div class="test-container">
                 <h3>Take a test</h3>
                 <div class="test-example">
                     <span class="iconify" data-inline="false" data-icon="carbon:home" style="font-size: 2.5em; color: #002173;"></span>
@@ -529,9 +533,7 @@
                     <p>Do you want to buy a house? Take a free test and check of you‘re ready!</p>
                     <a href="#">Take a test</a>
                 </div>
-                <!-- <div class="test-example"></div>
-                <div class="test-example"></div>
-                <div class="test-example"></div> -->
+            
             </div>
 
             <!-- Articles -->
@@ -573,7 +575,7 @@
 <section id="profile" class="page">
     <div class="wrapper">
 
-        <div class="profile-box">
+        <div class="profile-box wrapper-mobile">
             <h2>Profile</h2>
                 <!-- Profile nav -->
                 <div class="profile-nav">

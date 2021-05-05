@@ -17,12 +17,19 @@ p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+    color: var(--navyblue);
 }
 
 a {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+}
+
+span {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
 }
 
 h2 {
@@ -51,7 +58,11 @@ h4 {
 }
 
 /* side navigation desktop */
-
+.tabbar a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+}
 
 .tabbar a:hover {
     opacity: .5;
@@ -261,10 +272,10 @@ li {
     margin-right: 80px;
     margin-left: 24px;
 }
-
+/* 
 .case-box span {
     font-weight: bold;
-}
+} */
 
 .home-services {
     margin: 0;
@@ -293,38 +304,6 @@ li {
 }
 
 /* profile content */
-.profile-nav {
-    width: auto;
-    height: 524px;
-    margin-right: 32px;
-    padding: 24px 16px;
-    float: left;
-
-    background: white;
-    border-radius: 20px;
-}
-
-.profile-element {
-    width: 324px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    margin-bottom: 24px;
-
-    background: white;
-    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
-    border-radius: 32px;
-}
-
-.profile-hover:hover {
-    /* opacity: .7; */
-    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
-    transition: .7s;
-    cursor: pointer;
-}
-
 #profile h4 {
     color: var(--navyblue);
     margin: 0;
@@ -710,13 +689,9 @@ li {
     border-radius: 32px;
 }
 
-.discount-example p:nth-child(2) {
+.discount-headline {
     font-weight: bolder;
     margin: 8px 0;
-}
-
-.discount-example p:nth-child(3) {
-    margin: 0 0 8px 0;
 }
 
 .discount-example img {
@@ -757,6 +732,7 @@ li {
     margin: 16px 0 0 0;
 }
 
+/* desktop screen */
 @media (min-width: 768px) {
     .tabbar {
         height: 100%;
@@ -806,6 +782,43 @@ li {
     .case-navigation {
         display: none;
     }
+
+    .profile-nav {
+        width: auto;
+        height: 524px;
+        margin-right: 32px;
+        padding: 24px 16px;
+        float: left;
+    
+        background: white;
+        border-radius: 20px;
+    }
+
+    .profile-element {
+        width: 324px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        margin-bottom: 24px;
+    
+        background: white;
+        box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+        border-radius: 32px;
+    }
+
+    .profile-hover:hover {
+        /* opacity: .7; */
+        box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
+        transition: .7s;
+        cursor: pointer;
+    }
+
+    /* member club */
+    .test-container {
+        margin-top: 16px;
+    }
 }
 
 /* mobile screen */
@@ -819,10 +832,16 @@ li {
 
     .wrapper {
         margin: 0;
+        padding: 0;
     }
 
     .wrapper-mobile {
         padding: 32px 16px 0 16px;
+        height: 100vh;
+    }
+
+    .wrapper-memberclub-mobile {
+        padding: 32px 0 0 16px;
         height: 100vh;
     }
 
@@ -849,7 +868,7 @@ li {
         display: inline-block;
         text-align: center;
         color: white;
-        padding: 8px 16px;
+        padding: 8px 12px;
         text-decoration: none;
         font-size: 1em;
     }
@@ -857,7 +876,8 @@ li {
     .nav-icon {
         display: flex;
         margin: 0 auto;
-        font-size: 2em;
+        font-size: 1.5em;
+        padding: 8px;
     }
 
     .tabbar img {
@@ -930,7 +950,7 @@ li {
         margin-top: 24px;
     }
 
-    .case-nav-element {
+    .case-nav-element, .profile-element {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -954,6 +974,27 @@ li {
         padding-bottom: 12px;
     }
 
-/* mobile case example-files */
+/* mobile profile */
+    .personal-data {
+        display: none;
+    }
+/* mobile member club*/
+    .gratis-services-box, .articles-container {
+        display: none;
+    }
 
+    .discounts-container, .test-container {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .discount-example, .test-example{
+        width: 140px;
+        height: 140px;
+        padding: 8px;
+    }
+
+    .test-container {
+        margin-top: 24px;
+    }
 }
