@@ -253,8 +253,6 @@ li {
     border-radius: 50%;
   }
 
-
-
 .case-box {
     width: 840px;
     height: 80px;
@@ -267,11 +265,21 @@ li {
     border-radius: 20px;
 }
 
+.case-box:hover {
+    box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
+    transition: .7s;
+    cursor: pointer;
+}
+
 .case-box p {
     display: inline-block;
     margin-right: 80px;
+}
+
+.case-box p:nth-child(1) {
     margin-left: 24px;
 }
+
 /* 
 .case-box span {
     font-weight: bold;
@@ -307,6 +315,12 @@ li {
 #profile h4 {
     color: var(--navyblue);
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#profile .dropbtn {
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     display: flex;
     align-items: center;
 }
@@ -352,7 +366,7 @@ li {
     margin-bottom: 24px;
 }
 
-.personal-data button {
+.save-button {
     float: right;
     margin-top: 24px;
     padding: 16px;
@@ -390,6 +404,8 @@ li {
     left: 364px;
     top: 198px;
     margin: 24px 0;
+    display: flex;
+    align-items: center;
 
     background: white;
     border-radius: 20px;
@@ -397,8 +413,15 @@ li {
 
 .advisor-info p {
     display: inline-block;
-    margin-right: 108px;
+    margin-right: 80px;
+}
+
+.advisor-info p:nth-child(1) {
     margin-left: 24px;
+}
+
+.advisor-info p:last-child {
+    margin-right: 0;
 }
 
 .advisor-info span {
@@ -554,7 +577,6 @@ li {
 
 .chat-box {
     width: 100%;
-    height: 648px;
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -567,12 +589,6 @@ li {
 .chat-box img {
     width: 15%;
     float: left;
-}
-
-.message-container {
-    width: 340px; 
-    margin-top: auto;
-    margin-bottom: -322px;
 }
 
 .message-container p {
@@ -593,7 +609,6 @@ li {
     width: 280px;
     margin-left: 16px;
     padding: 16px;
-    color: white;
 
     background: var(--navyblue);
     box-shadow: 0px 5px 8px rgb(0 67 101 / 25%);
@@ -602,18 +617,17 @@ li {
 
 .message-text p {
     margin: 0;
+    color: white;
 }
 
 .message-input {
-    width: 324px;
     padding: 12px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
     color: var(--navyblue);
-    margin-top: auto;
-    margin-bottom: 16px;
+ 
 
     background: white;
     box-shadow: inset 0px 5px 8px rgba(0, 67, 101, 0.25);
@@ -649,7 +663,7 @@ li {
 
 .service-example img {
     float: left;
-    width: 108px;
+    width: 95px;
     margin-right: 12px;
 }
 
@@ -738,8 +752,29 @@ li {
         padding: 32px 16px 0 16px;
     }
 
+    .case-box {
+        display: flex;
+        align-items: center;
+    }
+
     .case-navigation {
         display: none;
+    }
+
+    .chat-box {
+        height: 648px;
+    }
+
+    .message-container {
+        width: 340px; 
+        margin-top: auto;
+        margin-bottom: -322px;
+    }
+
+    .message-input {
+        width: 324px;
+        margin-top: auto;
+        margin-bottom: 16px;
     }
 
     .profile-nav {
@@ -827,6 +862,10 @@ li {
     .article-example h4 {
         font-size: 1.25em;
         margin: 16px 0 0 0;
+    }
+
+    .gratis-services-mobile {
+        display: none;
     }
 }
 
@@ -972,7 +1011,7 @@ li {
         border-radius: 32px;
     }
 
-/* mobile case example-advisor info */
+/* mobile case example */
     #advisor-mobile p {
         display: block;
         padding: 12px 0 0 16px;
@@ -983,11 +1022,31 @@ li {
         padding-bottom: 12px;
     }
 
-/* mobile member club*/
-    .gratis-services-box {
-        display: none;
+    #files-mobile .mobile-white-bcg {
+        margin-top: 16px;
     }
 
+/* mobile case example - chat */
+    .chat-box {
+        height: auto;
+    }
+
+    .message-container {
+        width: 311px;
+        margin: 0;
+    }
+
+    .message-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .message-input {
+        margin: 24px 0 0 0;
+        width: 287px;
+    }
+
+/* mobile member club*/
     .discounts-container, .test-container {
         overflow: auto;
         white-space: nowrap;
@@ -1039,6 +1098,28 @@ li {
         margin: 0;
     }
 
+    .gratis-services-box {
+        display: none;
+    }
+
+    .gratis-services-mobile {
+        padding-right: 16px;
+    }
+
+    .service-example {
+        width: 328px;
+        height: 140px;
+        padding: 8px;
+        margin-bottom: 24px;
+        text-align: left;
+        /* display: flex;
+        align-items: center; */
+
+        background: white;
+        border-radius: 20px;
+    }
+
+/* mobile profile */
     .reversed {
         display: none;
     }
@@ -1059,6 +1140,14 @@ li {
     .personal-data span {
         margin: 0;
         padding: 8px 16px;
+    }
+
+    #personal-data-mobile .dropbtn {
+        width: 311px;
+        display: flex;
+        align-items: center;
+
+        box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     }
 
 }
