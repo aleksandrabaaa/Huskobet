@@ -24,6 +24,7 @@ a {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+    color: var(--navyblue);
 }
 
 span {
@@ -157,7 +158,11 @@ li {
 
 .huskobet-blue-logo {
     float: left;
-    width: 12%;
+    float: left;
+    width: 46px;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .update p {
@@ -854,10 +859,12 @@ li {
     }
     
     .article-example img {
-        text-align: center;
-        max-width: 268px;
-    
-        border-radius: 30px;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+        border-radius: 32px;
     }
     
     .article-example h4 {
