@@ -152,7 +152,7 @@ li {
 
     background: white;
     box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
-    border-radius: 20px;
+    border-radius: 32px;
 }
 
 .huskobet-blue-logo {
@@ -240,15 +240,13 @@ li {
   }
 
 .case-box {
-    width: 840px;
-    height: 80px;
     left: 364px;
     top: 198px;
     margin-bottom: 24px;
 
     background: white;
     box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
-    border-radius: 20px;
+    border-radius: 32px;
 }
 
 .case-box:hover {
@@ -398,7 +396,7 @@ li {
     align-items: center;
 
     background: white;
-    border-radius: 20px;
+    border-radius: 32px;
 }
 
 .advisor-info p {
@@ -646,7 +644,6 @@ li {
     margin: 0;
 }
 
-
 .discount-example, .test-example {
     /* width: 196px;
     height: 196px; */
@@ -732,6 +729,8 @@ li {
     }
 
     .case-box {
+        width: 840px;
+        height: 80px;
         display: flex;
         align-items: center;
     }
@@ -781,9 +780,8 @@ li {
         height: 164px;
         display: inline-block;
         text-align: center;
-        margin-right: 8px;
+        margin-right: 16px;
         padding: 16px;
-    
     }
 
     .profile-nav {
@@ -834,10 +832,6 @@ li {
     }
 
     /* member club */
-    .test-container {
-        margin-top: 16px;
-    }
-
     .articles-flexbox {
         display: flex; 
         justify-content: space-between;
@@ -851,7 +845,6 @@ li {
     .article-example {
         width: 268px;
         height: 348px;
-        margin-right: 8px;
         padding: 16px;
         float: left;
         text-align: center;
@@ -878,7 +871,7 @@ li {
 
     .service-example {
         width: auto;
-        height: auto;
+        height: 107px;
         padding: 16px;
         margin-bottom: 16px;
         /* display: flex;
