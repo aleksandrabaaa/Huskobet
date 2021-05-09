@@ -21,9 +21,9 @@ p {
 }
 
 a {
-    font-family: Roboto;
+    font-family: Raleway;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     color: var(--navyblue);
 }
 
@@ -39,7 +39,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
     color: var(--navyblue);
-    margin: 0 0 8px 0;
+    margin: 0 0 24px 0;
 }
 
 h3 {
@@ -71,7 +71,6 @@ h4 {
 }
 
 .tabbar img {
-    width: 25%;
     margin: 0 auto;
     display: flex;
     margin-bottom: 56px;
@@ -156,13 +155,13 @@ li {
     border-radius: 32px;
 }
 
+.date {
+    font-size: .75em;
+    margin: 0;
+}
+
 .huskobet-blue-logo {
     float: left;
-    float: left;
-    width: 46px;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
 }
 
 .update p {
@@ -262,11 +261,38 @@ li {
 
 .case-box p {
     display: inline-block;
-    margin-right: 80px;
+    margin-right: 64px;
 }
 
 .case-box p:nth-child(1) {
     margin-left: 24px;
+}
+
+.active, .pending, .closed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 20px;        
+}
+
+.active {
+    color: var(--green);
+    background: rgba(43, 222, 141, 0.15);
+}
+
+.pending {
+    color: var(--orange);
+    background: rgba(251, 178, 62, 0.15);
+}
+
+.closed {
+    color: var(--red);
+    background: rgba(219, 58, 42, 0.15);
 }
 
 /* 
@@ -573,7 +599,6 @@ li {
 }
 
 .chat-box img {
-    width: 15%;
     float: left;
 }
 
@@ -624,11 +649,12 @@ li {
 /* member club */
 #memberclub h3 {
     margin: 0 0 8px 0;
+    display: inline-block;
 }
 
-#memberclub h2 {
+/* #memberclub h2 {
     margin-bottom: 24px;
-}
+} */
 
 .gratis-services-box {
     width: 400px;
@@ -640,7 +666,6 @@ li {
 
 .service-example img {
     float: left;
-    width: 95px;
     margin-right: 12px;
 }
 
@@ -663,12 +688,13 @@ li {
     margin: 8px 0;
 }
 
-.discount-example img {
+/* .discount-example img {
     width: 20%;
-}
+} */
 
 .test-example p {
     margin: 8px 0;
+    height: 80px;
 }
 
 /* desktop screen */
@@ -738,6 +764,19 @@ li {
         height: 80px;
         display: flex;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    .case-box img {
+        margin: 0 16px;
+    }
+
+    .active, .pending, .closed {
+        width: 148px;
+    }
+
+    .status-mobile {
+        display: none;
     }
 
     .case-navigation {
@@ -849,7 +888,6 @@ li {
     
     .article-example {
         width: 268px;
-        height: 348px;
         padding: 16px;
         float: left;
         text-align: center;
@@ -881,8 +919,8 @@ li {
         height: 107px;
         padding: 16px;
         margin-bottom: 16px;
-        /* display: flex;
-        align-items: center; */
+        display: flex;
+        align-items: center;
     
         background: white;
         border-radius: 20px;
@@ -894,13 +932,13 @@ li {
 /* mobile general */
     .page {
         /* min-height: calc(100vh - 110px); */
-        animation: fadeIn 0.4s;
+        animation: fadeIn .8s;
         padding: 104px 0;
     }
 
     .wrapper {
         padding: 0 16px;
-        height: 65vh;
+        /* height: 65vh; */
     }
 
     .mobile-white-bcg {
@@ -975,7 +1013,7 @@ li {
     .updates-box {
         height: 724px;
         float: right;
-        padding: 32px 16px 0 16px;
+        padding: 0 16px;
     }
 
 /* mobile cases */
@@ -992,6 +1030,16 @@ li {
         display: block;
         padding: 12px 0 0 16px;
         margin: 0;
+    }
+
+    .active, .pending, .closed{
+        width: 100px;
+        margin: 12px 16px 0 0;
+        float: right;        
+    }
+    
+    .status-desktop {
+        display: none;
     }
 
 /* mobile case example */
@@ -1089,18 +1137,17 @@ li {
         white-space: nowrap;
     }
 
-    .discount-example, .test-example{
-        /* width: 250px;
-        height: fit-content;    
-        white-space: pre-wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center; */
+    .discounts-container div:nth-child(2) {
+        display: none;
+    }
 
-        /* width: 180px; */
+    .test-container div:nth-child(2) {
+        display: none;
+    }
+
+    .discount-example, .test-example{
         height: 164px;
         padding: 8px;
-        /* white-space: pre-wrap; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1143,10 +1190,6 @@ li {
         margin-left: 8px;
     }
 
-    /* .article-example br {
-        display: none;
-    } */
-
     .article-example img {
         float: left;
         height: 132px;
@@ -1172,9 +1215,9 @@ li {
     }
 
     .service-example {
-        width: 328px;
+        width: 312px;
         height: auto;
-        padding: 8px;
+        padding: 16px;
         margin-bottom: 16px;
         text-align: left;
         display: flex;
@@ -1199,7 +1242,7 @@ li {
 
     .personal-data {
         width: 100%;
-        height: 100%;
+        height: 888px;
         margin-top: 24px;
     
         background: white;
