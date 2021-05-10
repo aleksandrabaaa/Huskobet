@@ -1,0 +1,302 @@
+:root {
+    --navyblue: #002173;
+    --lightblue: #E9F6FD;
+    --green: #2BDE8D;
+    --orange: #FFC014;
+    --red: #DB3A2A;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: var(--navyblue);
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font: 4em;
+}
+
+h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+h4 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* top navigation */
+.topnav-home {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+    background: var(--navyblue);
+}
+
+.topnav-home a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+/* hero banner */
+.hero-banner {
+    background: url(/img/hero-banner.jpg);
+    /* width: 100%; */
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-banner h1 {
+    text-align: left;
+    margin: 0;
+    font-weight: normal;
+    color: white;
+}
+
+.hero-banner span {
+    font-weight: bold;
+}
+
+.signup-btn {
+    float: left;
+    margin-top: 24px;
+    padding: 12px;
+    width: 224px;
+    height: auto;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+
+    color: white;
+    background: var(--green);
+    border-radius: 32px;
+}
+
+/* content */
+.home-wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    /* max-width: 960px; */
+    padding-right: 56px;
+    padding-left:  56px;
+}
+
+.areas-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.area-box {
+    background: white;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 24px 32px; */
+}
+
+.area-box h2 {
+    margin: 0;
+}
+
+.circle-box {
+    position: relative;
+    margin: 0 auto;
+    top: -45px;
+}
+
+.circle {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+    background: white;
+    box-shadow: 0px 16px 40px rgb(112 144 176 / 8%);
+}
+
+.circle svg {
+    font-size: 3em;
+    color: var(--navyblue);
+    margin: 0 auto;
+}
+
+/* welcome element */
+.welcome-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-content svg {
+    margin-right: 24px;
+    font-size: 4em;
+}
+
+.welcome-content h3 {
+    margin: 0;
+}
+
+.welcome-content p {
+    max-width: 380px;
+}
+
+.column {
+    float: left;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-text p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.welcome-text h2 {
+    margin: 0;
+}
+
+
+/* desktop */
+@media (min-width: 768px) {
+/* hero banner */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .topnav-home a:nth-child(1) {
+        margin-left: 56px;
+    }
+    
+    .topnav-home a:nth-child(3) {
+        margin-right: 56px;
+    }
+
+    .hero-banner {
+        padding: 0 56px;
+        height: 640px;
+    }
+
+    .areas-container {
+        bottom: 80px;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .column {
+        padding: 10px;
+    }
+
+    .welcome-content {
+        margin-bottom: 40px;
+    }
+}
+
+/* mobile */
+@media (max-width: 375px) {
+/* hero banner */
+    h1 {
+        font-size: 1.25em;
+    }
+
+    .topnav-home a:nth-child(1) {
+        margin-left: 24px;
+    }
+    
+    .topnav-home a:nth-child(3) {
+        margin-right: 24px;
+    }
+
+    .hero-banner {
+        padding: 0 24px;
+        height: 375px;
+    }
+
+    .areas-container {
+        flex-direction: column;
+    }
+
+    .area-box {
+        margin-bottom: 56px;
+    }
+
+    .circle-box {
+        top: -25px;
+    }
+
+    .circle {
+        height: 80px;
+        width: 80px;
+    }
+
+    .circle svg {
+        font-size: 2.5em;
+    }
+
+    .home-wrapper {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .welcome-container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+      }
+
+    .welcome-content {
+        margin-bottom: 24px;
+    }
+
+    .welcome-content p {
+        margin: 8px 0 0 0;
+    }
+}

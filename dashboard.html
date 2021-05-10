@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Huskobet | Dashboard</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Huskobet, user dashboard">
+    <meta name="author" content="Aleksandra Wytulany">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onhashchange="pageChange()">
+
+<!-----side desktop navigation----->
+<nav class="tabbar">
+    <a href="index.html"><img src="/img/huskobet-white-logo.png" alt="Huskobet white logo"></a>
+    <a href="#home"><span class="iconify nav-icon" data-inline="false" data-icon="carbon:home"></span>Home</a>
+    <a href="#cases"><span class="iconify nav-icon" data-inline="false" data-icon="carbon:folder"></span>Cases</a>
+    <a href="#memberclub"><span class="iconify nav-icon" data-inline="false" data-icon="carbon:star"></span>Member club</a>
+    <a href="#profile"><span class="iconify nav-icon" data-inline="false" data-icon="carbon:user"></span>Profile</a>
+</nav>
+
+<!-----top desktop navigation----->
+<div class="header">
+    <img src="/img/huskobet-white-logo.png" alt="Huskobet white logo">
+    <ul id="navlist">
+      <li id="active">User name</li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:event-schedule"></span></li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:help"></span></li>
+      <li><span class="iconify topnav-icon" data-inline="false" data-icon="carbon:login"></span></li>
+    </ul>
+  </div>
+
+<!-----home----->
+<section id="home" class="page">
+    
+    <!-- Updates -->
+    <div class="updates-box">
+        <h2>Updates</h2>
+
+        <!-- toggle switch -->
+        <div class="toggle-btn">
+            <p>Email notification</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div>
+            <p class="date">19/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>Tobias Elmstrøm uploaded new offer regarding Land trade case. Check the offer here or go to the case.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+                
+            </div>
+
+            <p class="date">08/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>You have a new message from Tobias Elmstrøm from Land trade case. Click here to see the message or go to the case.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+            </div>
+
+            <p class="date">06/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>You have successfully uploaded a new document to Land trade case. 
+                    Click here to see it.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <!-- Cases -->
+    <div class="home-cases">
+        <h2>Cases</h2>
+        <a href="#cases" style="float: right;">See all cases</a>
+            <a href="#case-example" style="text-decoration: none;"><div class="case-box">
+                <p><span>Service:</span><br>Land trade</p>
+                <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
+                <p><span>Advisor:</span><br>Tobias Elmstrøm</p>
+                <div class="active">Active</div>
+                <img src="/img/open-icon.svg" alt="Open icon svg">
+            </div></a>
+            <div class="case-box">
+                <p><span>Service:</span><br>Financial advise</p>
+                <p><span>Company:</span><br>BoFinans Aarhus</p>
+                <p><span>Advisor:</span><br>Not assigned</p>
+                <div class="pending">Pending</div>
+                <img src="/img/open-icon.svg" alt="Open icon svg">
+            </div>
+            <div class="case-box">
+                <p><span>Service:</span><br>Construction report</p>
+                <p><span>Company:</span><br>BoTjek</p>
+                <p><span>Advisor:</span><br>Anders Nielsen</p>
+                <div class="active">Active</div>
+                <img src="/img/open-icon.svg" alt="Open icon svg">
+        
+            </div>
+        </div>
+    <!-- Services -->
+    <div class="home-services">
+        <h2>Selected for you</h2>
+        <a href="#" style="float: right;">See all services</a>
+
+        <div>
+            <div class="service-box">
+                <img src="/img/kick-off-service.png">
+                <h3>Kick-off meeting</h3>
+                <p>We offer our members a free start-up meeting, where together with...</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="service-box" style="margin-left: 16px;">
+                <img src="/img/purchase-agreement-service.png">
+                <h3>Purchase agreement</h3>
+                <p>The buyer's advisor handles the guidance and review of all conditions...</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="service-box" style="margin-left: 16px;">
+                <img src="/img/sketchdrawing-service.png">
+                <h3>Sketch drawing</h3>
+                <p>A sketch project is prepared to help you reach your dreams from idea to completed...</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+</div>
+</div>
+
+</section>
+
+<!-----cases----->
+<section id="cases" class="page">
+
+    <!-- Updates -->
+    <div class="updates-box">
+        <h2>Updates</h2>
+
+        <!-- toggle switch -->
+        <div class="toggle-btn">
+            <p>Email notification</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div>
+            <p class="date">19/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>Tobias Elmstrøm uploaded new offer regarding Land trade case. Check the offer here or go to the case.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+                
+            </div>
+
+            <p class="date">08/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>You have a new message from Tobias Elmstrøm from Land trade case. Click here to see the message or go to the case.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+            </div>
+
+            <p class="date">06/04/2021</p>
+            <div class="update">
+                <img src="/img/huskobet-blue-logo.png" alt="Huskobet blue logo" class="huskobet-blue-logo">
+                <p>You have successfully uploaded a new document to Land trade case. 
+                    Click here to see it.<br>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.5em; color: #002173; float: right;"></span>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" style="float: right;">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="wrapper">
+        <!-- Cases -->
+        <div class="home-cases">
+            <h2>Cases</h2>
+                <a href="#case-example" style="text-decoration: none;"><div class="case-box">
+                    <div><div class="active status-mobile">Active</div></div>
+                    <p><span>Service:</span><br>Land trade</p>
+                    <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
+                    <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Tobias Elmstrøm</p>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
+                    <div class="active status-desktop">Active</div>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
+                </div></a>
+                <div class="case-box">
+                    <div><div class="pending status-mobile">Pending</div></div>
+                    <p><span>Service:</span><br>Financial advise</p>
+                    <p><span>Company:</span><br>BoFinans Aarhus</p>
+                    <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Not assigned</p>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
+                    <div class="pending status-desktop">Pending</div>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
+                </div>
+                <div class="case-box">
+                    <div><div class="active status-mobile">Active</div></div>
+                    <p><span>Service:</span><br>Construction report</p>
+                    <p><span>Company:</span><br>BoTjek</p>
+                    <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Anders Nielsen</p>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
+                    <div class="active status-desktop">Active</div>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
+            
+                </div>
+
+                <div class="case-box">
+                    <div><div class="closed status-mobile">Closed</div></div>
+                    <p><span>Service:</span><br>Kick-off meeting</p>
+                    <p><span>Company:</span><br>BoFinans</p>
+                    <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Jesper Hansen</p>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
+                    <div class="closed status-desktop">Closed</div>
+                    <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-----case example----->
+<section id="case-example" class="page">
+    <div class="wrapper">
+        <h2>Land trade</h2>
+        <a href="#cases" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the cases</a>
+
+        <!-- Advisor info -->
+        <div class="advisor-info">
+            <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
+            <p><span>Advisor:</span><br>Tobias Elmstrøm</p>
+            <p><span>Email:</span><br>info@advokatfirmaet-ge.dk</p>
+            <p><span>Phone number:</span><br>(+45) 72 14 11 15</p>
+            <p><span>Website:</span><br>https://www.advokatfirmaet-ge.dk/</p>
+        </div>
+
+        <div class="case-content">
+
+            <div class="files-container">
+                <h3>Files</h3>
+                
+                <!-- extra features -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Type</a>
+                      <a href="#">Name</a>
+                      <a href="#">Date</a>
+                    </div>
+                  </div>
+
+                  <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+                  <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+                <!-- Files -->
+                <div class="files-white-box">
+                    <div class="files-content">
+                    <p class="document">Type</p>
+                    <p class="document">Name</p>
+                    <p class="document">Date</p>
+
+                    <div class="file-example">
+                        <div>
+                            <p>Doc type</p>
+                            <p>Doc name</p>
+                            <p>Doc name</p>
+                        </div>
+                        <div>
+                            <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                            <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                        </div>
+                    </div>
+
+                    <div class="file-example">
+                        <div>
+                            <p>Doc type</p>
+                            <p>Doc name</p>
+                            <p>Doc name</p>
+                        </div>
+                        <div>
+                            <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                            <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                        </div>
+                    </div>
+
+                    <div class="file-example">
+                        <div>
+                            <p>Doc type</p>
+                            <p>Doc name</p>
+                            <p>Doc name</p>
+                        </div>
+                        <div>
+                            <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                            <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="calendar-container">
+                <h3>Calendar</h3>
+                    <div class="calendar-white-box"></div>
+            </div>
+
+            <!-- Chat -->
+            <div class="chat-container">
+                <h3>Chat</h3>
+
+                    <div class="chat-box">
+                        
+                        <div class="message-container">
+                            <p class="date">08/04/2021</p>
+                            <div class="message-box">
+                                <img src="/img/huskobet-blue-logo.png">
+                                    <div class="message-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        A, felis mattis quis massa at.</p>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                        <!-- <span class="iconify" data-inline="false" data-icon="carbon:send" style="position: absolute;"></span> -->
+                        <input type="text" onfocus="this.value=''" name="message" value="Write a message here" class="message-input">
+                    </div>
+            </div>
+
+        </div>
+
+        <!-- mobile nav -->
+        <div class="case-navigation">
+            <a href="#advisor-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:tool-box"></span>Advisor</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#files-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:document"></span>Files</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#calendar-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:event-schedule"></span>Calendar</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+            <a href="#chat-mobile" class="case-nav-element">
+                <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:chat"></span>Chat</h4>
+                <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- mobile case example-advisor -->
+<section id="advisor-mobile" class="page">
+    <div class="wrapper">
+        <h3>Advisor</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
+            <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
+            <p><span>Advisor:</span><br>Tobias Elmstrøm</p>
+            <p><span>Email:</span><br>info@advokatfirmaet-ge.dk</p>
+            <p><span>Phone number:</span><br>(+45) 72 14 11 15</p>
+            <p><span>Website:</span><br>https://www.advokatfirmaet-ge.dk/</p>
+        </div>
+    </div>
+</section>
+
+<!-- mobile case example-files -->
+<section id="files-mobile" class="page">
+    <div class="wrapper">
+        <h3>Files</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <!-- extra features -->
+        <div style="margin-top: 24px; display: flow-root;">  
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="#">Type</a>
+                <a href="#">Name</a>
+                <a href="#">Date</a>
+            </div>
+          </div>
+
+          <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+
+          <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+        </div>
+
+        <div class="mobile-white-bcg">
+            <div class="file-example">
+                <div>
+                    <p>Doc type</p><br>
+                    <p>Doc name</p>
+                    <p>Doc name</p>
+                </div>
+                <div>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                    <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                </div>
+            </div>
+
+            <div class="file-example">
+                <div>
+                    <p>Doc type</p><br>
+                    <p>Doc name</p>
+                    <p>Doc name</p>
+                </div>
+                <div>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                    <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                </div>
+            </div>
+
+            <div class="file-example">
+                <div>
+                    <p>Doc type</p><br>
+                    <p>Doc name</p>
+                    <p>Doc name</p>
+                </div>
+                <div>
+                    <span class="iconify" data-inline="false" data-icon="carbon:trash-can" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                    <span class="iconify" data-inline="false" data-icon="carbon:download" data-flip="horizontal" style="font-size: 1.25em; color: #002173;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- mobile case example-calendar -->
+<section id="calendar-mobile" class="page">
+    <div class="wrapper">
+        <h3>Calendar</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
+
+        </div>
+    </div>
+
+</section>
+
+<!-- mobile case example-chat -->
+<section id="chat-mobile" class="page">
+    <div class="wrapper">
+        <h3>Chat</h3>
+        <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
+        <div class="mobile-white-bcg">
+            <div class="chat-box">
+                        
+                <div class="message-container">
+                    <p class="date">08/04/2021</p>
+                    <div class="message-box">
+                        <img src="/img/huskobet-blue-logo.png">
+                            <div class="message-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                A, felis mattis quis massa at.</p>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+                <input type="text" onfocus="this.value=''" name="message" value="Write a message here" class="message-input">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-----member club----->
+<section id="memberclub" class="page">
+    
+    <!-- Gratis services -->
+    <div class="gratis-services-box">
+        <h3 style="display: inline-block;">Gratis services</h3>
+        <a href="#" style="float: right;">See all services</a>
+        
+            <div class="service-example">
+                <div>
+                <img src="/img/kick-off-service.png" alt="Kick-off service">
+                    <p style="font-weight: bold;">Kick-off meeting</p>
+                    <p>We offer our members a free start-up meeting, where together with an  professional advisor you will get a...</p>
+                </div>
+        </div>
+        
+            <div class="service-example">
+                <div>
+                    <img src="/img/financialadvice-service.png" alt="Financial advice service">
+                    <p style="font-weight: bold;">Financial advice</p>
+                    <p>No matter which bank leads your finances with our Financial advice you will have an professional and quick help...</p>
+                </div>
+            </div>
+        
+            <div class="service-example">
+                <div>
+                    <img src="/img/salesevaluation-service.png" alt="Sales evaluation service">
+                    <p style="font-weight: bold;">Sales evaluation</p>
+                    <p>Get professional help within Sales evaluation service. This will give you a brief start before purchasing your...</p>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="wrapper">
+        <h2>Member club</h2>
+        <div>
+            <!-- Discounts -->
+            <div class="discounts-container">
+                <h3>Discounts</h3>
+                    <div style="float: right;">
+                        <span class="iconify" data-inline="false" data-icon="carbon:chevron-left" style="font-size: 1.5em; color: #002173; opacity: .7;"></span>
+                        <span class="iconify" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+                    </div>
+                <div style="display: flex;">
+                    <div class="discount-example">
+                        <img src="/img/spotify.png" alt="Spotify logo">
+                        <p class="discount-headline">Spotify</p>
+                        <p style="margin: 0 0 8px 0; height: 56px;">Get free access to premium accoutn for a month</p>
+                        <a href="#">Get access</a>
+                    </div>
+                    <div class="discount-example">
+                        <img src="/img/billetlugen.png" alt="Billetlugen logo">
+                        <p class="discount-headline">Billetlugen</p>
+                        <p style="margin: 0 0 8px 0; height: 56px;">30% discount on every event ticket</p>
+                        <a href="#">Get access</a>
+                    </div>
+                    <div class="discount-example">
+                        <img src="/img/duka.png" alt="Duka logo">
+                        <p class="discount-headline">Duka</p>
+                        <p style="margin: 0 0 8px 0; height: 56px;">Premium monthly subscription for 99kr</p>
+                        <a href="#">Get access</a>
+                    </div>
+                    <div class="discount-example">
+                        <img src="/img/hbo.png" alt="HBO logo">
+                        <p class="discount-headline">HBO</p>
+                        <p style="margin: 0 0 8px 0; height: 56px;">10% discount for first-time subscribers</p>
+                        <a href="#">Get access</a>
+                    </div>
+                </div>
+    
+            </div>
+
+            <!-- Tests -->
+            <div class="test-container">
+                <h3>Take a test</h3>
+                <div style="float: right;">
+                    <span class="iconify" data-inline="false" data-icon="carbon:chevron-left" style="font-size: 1.5em; color: #002173; opacity: .7;"></span>
+                    <span class="iconify" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
+                </div>
+                <div style="display: flex;">
+                    <div class="test-example">
+                        <span class="iconify" data-inline="false" data-icon="carbon:home" style="font-size: 2.5em; color: #002173;"></span>
+                        <p>Do you want to buy a house? Take a free test and check of you‘re ready!</p>
+                        <a href="#">Take a test</a>
+                    </div>
+                    <div class="test-example">
+                        <span class="iconify" data-inline="false" data-icon="carbon:tools" style="font-size: 2.5em; color: #002173;"></span>
+                        <p>Framing, instalation plumbing - check if you’re ready for a house building!</p>
+                        <a href="#">Take a test</a>
+                    </div>
+                    <div class="test-example">
+                        <span class="iconify" data-inline="false" data-icon="carbon:paint-brush" style="font-size: 2.5em; color: #002173;"></span>
+                        <p>House renovation is a very big step. Are you well-prepared for that?</p>
+                        <a href="#">Take a test</a>
+                    </div>
+                    <div class="test-example">
+                        <span class="iconify" data-inline="false" data-icon="carbon:tools-alt" style="font-size: 2.5em; color: #002173;"></span>
+                        <p>Is house rebuilding going around in your head? Check if you’re equipped enough!</p>
+                        <a href="#">Take a test</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+            <!-- Articles -->
+            <div class="articles-container">
+                <h3 style="display: inline-block;">Latest articles</h3>
+                <a href="#" style="float: right;">See all articles</a>
+                <div class="articles-flexbox">
+                    <div class="article-example">
+                        <img src="/img/article-img.jpg" alt="Article img">
+                        <div>
+                        <h4>Housing prices in March 2021 set new records</h4>
+                        <p>In March 2021, house prices rose again and they are now being traded 12 percent higher than at the...</p><br>
+                        <a href="#">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="article-example">
+                        <img src="/img/article2-img.jpg" alt="Article img">
+                        <div>
+                        <h4>Construction contract helps to manage your property</h4>
+                        <p>If you are going to build a new house, it is crucial that you have complete control over the agreement...</p><br>
+                        <a href="#">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="article-example">
+                        <img src="/img/article3-img.jpg" alt="Article img">
+                        <div>
+                        <h4>The bank's loan terms are also negotiable</h4>
+                        <p>Most people are quite authoritative when it comes to their bank adviser. That is why very few people think of...</p><br>
+                        <a href="#">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="article-example">
+                        <img src="/img/article4-img.jpg" alt="Article img">
+                        <div>
+                        <h4>How to approach a renovation</h4>
+                        <p>When you look at older houses, the renovation projects can quickly seem unmanageable ...</p><br>
+                        <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- gratis services mobile -->
+            <div class="gratis-services-mobile">
+                <h3 style="display: inline-block;">Gratis services</h3>
+                <a href="#" style="float: right;">See all services</a>
+                <div class="articles-flexbox">
+
+                    <div class="service-example">
+                        <img src="/img/kick-off-service.png" alt="Kick-off service">
+                        <div>
+                            <p style="font-weight: bold;">Kick-off meeting</p>
+                            <p>We offer our members a free start-up meeting, where together with an  professional advisor you will get a...</p>
+                        </div>
+                    </div>
+
+                    <div class="service-example">
+                        <img src="/img/financialadvice-service.png" alt="Financial advice service">
+                        <div>
+                            <p style="font-weight: bold;">Financial advice</p>
+                            <p>No matter which bank leads your finances with our Financial advice you will have an professional and quick help...</p>
+                        </div>
+                    </div>
+
+                    <div class="service-example">
+                        <img src="/img/salesevaluation-service.png" alt="Sales evaluation service">
+                        <div>
+                            <p style="font-weight: bold;">Sales evaluation</p>
+                            <p>Get professional help within Sales evaluation service. This will give you a brief start before purchasing your...</p>
+                        </div>
+                    </div>       
+
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-----profile----->
+<section id="profile" class="page">
+    <div class="wrapper">
+
+        <div class="profile-box wrapper-mobile">
+            <h2>Profile</h2>
+                <!-- Profile nav -->
+                <div class="profile-nav">
+                    <div class="profile-element reversed" style="background: #002173;">
+                        <h4 style="color: white;"><span class="iconify headline-icon" data-inline="false" data-icon="carbon:identification" style="color: white;"></span>Personal data</h4>
+                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right" style="color: white;"></span>
+                    </div>
+
+                    <a href="#personal-data-mobile" style="text-decoration: none;">
+                        <div class="profile-element">
+                            <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:identification"></span>Personal data</h4>
+                            <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
+                        </div>
+                    </a>
+
+                    <div class="profile-element profile-hover">
+                        <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:notification"></span>Notifications</h4>
+                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
+                    </div>
+
+                    <div class="profile-element profile-hover">
+                        <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:settings-adjust"></span>Preferences</h4>
+                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
+                    </div>
+
+                    <div class="profile-element profile-hover">
+                        <h4><span class="iconify headline-icon" data-inline="false" data-icon="carbon:settings"></span>Settings</h4>
+                        <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Personal data content -->
+        <div class="personal-data">
+            <form>
+                <span>
+                <label>Name</label><br>     <!-- for="name" -->
+                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>    <!-- id="fname" -->
+                </span>
+
+                <span style="margin-right: 0;">
+                <label>Surname</label><br>
+                <input type="text" onfocus="this.value=''" name="surname" value="Surname"><br>
+                </span>
+
+                <span>
+                <label>Address</label><br>
+                <input type="text" onfocus="this.value=''" name="address" value="Address"><br>
+                </span>
+                
+                <span>
+                <label>City</label><br>
+                <input type="text" onfocus="this.value=''" name="city" value="City" style="width: 150px;"><br>
+                </span>
+
+                <span style="margin-right: 0;">
+                <label>Zip code</label><br>
+                <input type="text" onfocus="this.value=''" name="zipcode" value="Zip code" style="width: 150px;"><br>
+                </span>
+
+                <span>
+                <label>Date of birth</label><br>
+                <input type="text" onfocus="this.value=''" name="birthday" value="Date of birth" style="width: 150px;"><br>
+                </span>
+
+                <span>
+                <label>Gender</label><br>
+                <!-- <input type="text" name="gender" value="Gender" style="width: 150px;"><br> -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                    <div id="myDropdown2" class="dropdown-content">
+                      <a href="#">Female</a>
+                      <a href="#">Male</a>
+                      <a href="#">Other</a>
+                    </div>
+                  </div>
+                </span>
+
+                <span style="display:table; clear:both;">
+                <label>Email address</label><br>
+                <input type="text" onfocus="this.value=''" name="email" value="Email address"><br>
+                </span>
+
+                <span>
+                <label>Phone number</label><br>
+                <input type="number" onfocus="this.value=''" name="phoneno" value="Phone number" style="width: 150px;"><br>
+                </span>
+
+                <span>
+                <label>Current password</label><br>
+                <input type="text" onfocus="this.value=''" name="currentpassword" value="Current password"><br>
+                </span>
+
+                <span style="margin-right: 0;">
+                <label>New password</label><br>
+                <input type="text" onfocus="this.value=''" name="newpassword" value="New password"><br>
+                </span>
+              </form> 
+            
+          <button type="submit" class="save-button">Save the changes</button>
+
+        </div>
+    </div>
+</section>
+
+<!-- Personal data mobile -->
+<section id="personal-data-mobile" class="page">
+    <div class="wrapper">
+        <h3>Personal data</h3>
+        <a href="#profile" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the profile</a>
+        <div class="personal-data">
+            
+            <form>
+                <span>
+                <label>Name</label><br>     <!-- for="name" -->
+                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>    <!-- id="fname" -->
+                </span>
+
+                <span>
+                <label>Surname</label><br>
+                <input type="text" onfocus="this.value=''" name="surname" value="Surname"><br>
+                </span>
+
+                <span>
+                <label>Address</label><br>
+                <input type="text" onfocus="this.value=''" name="address" value="Address"><br>
+                </span>
+                
+                <span>
+                <label>City</label><br>
+                <input type="text" onfocus="this.value=''" name="city" value="City"><br>
+                </span>
+
+                <span>
+                <label>Zip code</label><br>
+                <input type="text" onfocus="this.value=''" name="zipcode" value="Zip code"><br>
+                </span>
+
+                <span>
+                <label>Date of birth</label><br>
+                <input type="text" onfocus="this.value=''" name="birthday" value="Date of birth"><br>
+                </span>
+
+                <span>
+                <label>Gender</label><br>
+                <!-- <input type="text" name="gender" value="Gender"><br> -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Female</a>
+                      <a href="#">Male</a>
+                      <a href="#">Other</a>
+                    </div>
+                  </div>
+                </span>
+
+                <span>
+                <label>Email address</label><br>
+                <input type="text" onfocus="this.value=''" name="email" value="Email address"><br>
+                </span>
+
+                <span>
+                <label>Phone number</label><br>
+                <input type="number" onfocus="this.value=''" name="phoneno" value="Phone number"><br>
+                </span>
+
+                <span>
+                <label>Current password</label><br>
+                <input type="text" onfocus="this.value=''" name="currentpassword" value="Current password"><br>
+                </span>
+
+                <span>
+                <label>New password</label><br>
+                <input type="text" onfocus="this.value=''" name="newpassword" value="New password"><br>
+                </span>
+            </form> 
+
+        </div>
+    </div>
+</section>
+
+<!-----SPA----->
+<script src="spa.js"></script>
+
+<!-----icons----->
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+<!--dropdown-->
+<script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+//make the dropdown disappear when clicking outside the dropdown
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+    function myFunction() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+//make the dropdown disappear when clicking outside the dropdown
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+</body>
+
+</html>
