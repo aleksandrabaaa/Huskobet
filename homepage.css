@@ -93,7 +93,6 @@ h4 {
 
 .signup-btn {
     float: left;
-    margin-top: 24px;
     padding: 12px;
     width: 224px;
     height: auto;
@@ -279,7 +278,7 @@ h4 {
 
 .list-items svg {
     font-size: 1.25em;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .list-items h4 {
@@ -311,8 +310,6 @@ h4 {
 /* testimonials */
 .testimonials-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .testimonial {
@@ -341,6 +338,41 @@ h4 {
     margin: 16px 0;
 }
 
+/* faq */
+.faq-container {
+    display: flex;
+    margin: 56px 0;
+}
+
+.faq-text {
+    text-align: left;
+}
+
+.faq-text h2 {
+    margin: 0;
+}
+
+.faq-text p {
+    max-width: 400px;
+}
+
+.question {
+    text-align: left;
+    padding: 8px 24px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.08);
+    border-radius: 32px;
+}
+
+.question:last-child {
+    margin-bottom: 0;
+}
+
 /* desktop */
 @media (min-width: 768px) {
 /* hero banner */
@@ -355,6 +387,10 @@ h4 {
     .hero-banner {
         padding: 0 56px;
         height: 640px;
+    }
+
+    .signup-btn {
+        margin-top: 40px;
     }
 
     .areas-container {
@@ -374,6 +410,7 @@ h4 {
     .numbers-container {
         flex-direction: row;
         justify-content: space-evenly;
+        margin: 56px 0;
     }
 
     .comparisons-container {
@@ -392,12 +429,24 @@ h4 {
     .about-us {
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .testimonials-container {
         flex-direction: row;
         justify-content: space-around;
+        margin: 56px 0;
+        padding: 56px 0;
+    }
+
+    .faq-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .question {
+        width: 440px;
     }
 }
 
@@ -423,6 +472,10 @@ h4 {
     .hero-banner {
         padding: 0 24px;
         height: 375px;
+    }
+
+    .signup-btn {
+        margin-top: 24px;
     }
 
     .areas-container {
@@ -481,6 +534,10 @@ h4 {
         margin-bottom: 24px;
     }
 
+    .number-box:last-child {
+        margin-bottom: 0;
+    }
+
     .comparisons-container {
         flex-direction: column;
     }
@@ -515,7 +572,7 @@ h4 {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: 56px;
+        padding: 56px 0;
     }
 
     .testimonial {
@@ -525,4 +582,21 @@ h4 {
     .testimonial:last-child {
         margin-bottom: 0;
     }
+
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-questions {
+        margin-top: 24px;
+    }
+
+    .question {
+        padding: 16px 24px;
+    }
+
+    .question h4 {
+        margin: 0;
+    }
+
 }
