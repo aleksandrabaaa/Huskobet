@@ -182,8 +182,23 @@ h4 {
 }
 
 .welcome-content svg {
-    margin-right: 24px;
+    /* margin-right: 24px; */
     font-size: 4em;
+    position: absolute;
+    z-index: 100;
+}
+
+.icon-bcg {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    transform: translate(16px, -16px);
+    border-radius: 50%;
+    background: var(--lightblue);
+}
+
+.welcome-content div:nth-of-type(2) {
+    margin-left: 40px;
 }
 
 .welcome-content h3 {
@@ -218,6 +233,7 @@ h4 {
     width: 100%;
     height: auto;
     padding: 56px 0;
+    background: var(--lightblue);
 }
 
 .number-box {
@@ -309,11 +325,13 @@ h4 {
 
 .about-text button {
     background: var(--navyblue);
+    margin-top: 24px;
 }
 
 /* testimonials */
 .testimonials-container {
     display: flex;
+    background: var(--lightblue);
 }
 
 .testimonial {
@@ -386,10 +404,6 @@ h4 {
     display: flex;
 }
 
-.partners-container img {
-    width: 80px;
-}
-
 /* footer */
 footer {
     display: flex;
@@ -425,6 +439,37 @@ footer {
     font-size: 1.5em;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 56px 0;
+}
+
+/* solution */
+.solution-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 56px 0 224px 0;
+}
+
+.solution-text {
+    text-align: left;
+}
+
+.solution-text h2 {
+    margin: 0;
+}
+
+.solution-text p {
+    max-width: 400px;
+}
+
+.solution-text button {
+    margin-top: 24px;
+}
+
 
 /* desktop */
 @media (min-width: 768px) {
@@ -442,7 +487,7 @@ footer {
         height: 640px;
     }
 
-    .signup-btn {
+    .hero-banner .signup-btn {
         margin-top: 40px;
     }
 
@@ -489,7 +534,11 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         margin: 56px 0;
-        padding: 56px 0;
+        padding: 56px;
+    }
+
+    .testimonial p:nth-of-type(1) {
+        height: 100px;
     }
 
     .faq-container {
@@ -508,8 +557,18 @@ footer {
         justify-content: space-around;
     }
 
+    .partners-container img {
+        opacity: .5;
+    }
+
+    .partners-container img:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition: .3s;
+    }
+
     footer {
-        padding: 56px 0 24px;
+        padding: 24px 0;
     }
 
 }
@@ -536,10 +595,6 @@ footer {
     .hero-banner {
         padding: 0 24px;
         height: 375px;
-    }
-
-    .signup-btn {
-        margin-top: 24px;
     }
 
     .areas-container {
@@ -591,6 +646,7 @@ footer {
 
     .numbers-container {
         flex-direction: column;
+        margin: 56px 0;
     }
 
     .number-box {
@@ -640,7 +696,7 @@ footer {
     }
 
     .testimonial {
-        margin-bottom: 24px;
+        margin-bottom: 40px;
     }
 
     .testimonial:last-child {
@@ -664,7 +720,15 @@ footer {
     }
 
     .partners-container {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 24px 0;
+    }
+
+    .partners-container img {
+        width: 80px;
+        padding: 12px;
     }
 
     footer {
