@@ -23,7 +23,7 @@ p {
 a {
     font-family: Raleway;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--navyblue);
 }
 
@@ -518,6 +518,7 @@ li {
 .dropbtn {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
@@ -707,7 +708,7 @@ li {
         z-index: 100;
         position: fixed;
         overflow-x: hidden;
-        padding-top: 56px;
+        padding-top: 24px;
         background: var(--navyblue);
         box-shadow: 5px 0px 8px rgba(0, 67, 101, 0.25);
     }
@@ -723,6 +724,10 @@ li {
         line-height: 28px;
         color: white;
         display: block;
+    }
+
+    .tabbar a:nth-of-type(1) {
+        padding: 0;
     }
 
     .header {

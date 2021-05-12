@@ -363,7 +363,6 @@ h4 {
 /* faq */
 .faq-container {
     display: flex;
-    margin: 56px 0;
 }
 
 .faq-text {
@@ -442,16 +441,12 @@ footer {
 .button-container {
     display: flex;
     justify-content: center;
-    padding: 24px 0 56px 0;
+    margin-top: 24px;
 }
 
 /* solution */
 .solution-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 56px 0 224px 0;
 }
 
 .solution-text {
@@ -509,6 +504,18 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         margin: 56px 0;
+    }
+
+    .solution-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 132px;
+    }
+
+    .solution-container img:nth-of-type(2) {
+        position: absolute;
+        right: 0; transform: translate(-156px, 132px);
     }
 
     .comparisons-container {
@@ -597,6 +604,10 @@ footer {
         height: 375px;
     }
 
+    .hero-banner button {
+        margin-top: 24px;
+    }
+
     .areas-container {
         flex-direction: column;
     }
@@ -658,6 +669,28 @@ footer {
         margin-bottom: 0;
     }
 
+    .solution-container {
+        flex-direction: column;
+    }
+
+    .solution-container div:nth-child(2) {
+        width: 340px;
+        margin-top: 40px;
+    }
+
+    .solution-container img:nth-of-type(1) {
+        width: 340px;
+    }
+
+    .solution-container img:nth-of-type(2) {
+        transform: translate(216px, -132px);
+        width: 124px;
+    }
+
+    .solution-text button {
+        margin-top: 8px;
+    }
+
     .comparisons-container {
         flex-direction: column;
     }
@@ -688,6 +721,10 @@ footer {
         margin-top: 24px;
     }
 
+    .about-text button {
+        margin-top: 8px;
+    }
+
     .testimonials-container {
         flex-direction: column;
         align-items: center;
@@ -705,6 +742,7 @@ footer {
 
     .faq-container {
         flex-direction: column;
+        margin: 56px 0;
     }
 
     .faq-questions {
@@ -719,11 +757,15 @@ footer {
         margin: 0;
     }
 
+    .faq-text button {
+        margin-top: 8px;
+    }
+
     .partners-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 24px 0;
+        margin-bottom: 56px;
     }
 
     .partners-container img {
