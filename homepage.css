@@ -91,10 +91,14 @@ h4 {
     font-weight: bold;
 }
 
+.hero-banner button {
+    width: 224px;
+    padding: 12px;
+}
+
 .signup-btn {
     float: left;
-    padding: 12px;
-    width: 224px;
+    padding: 12px 32px;
     height: auto;
     font-family: Raleway;
     font-style: normal;
@@ -602,6 +606,9 @@ footer {
     .hero-banner {
         padding: 0 24px;
         height: 375px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 80%;
     }
 
     .hero-banner button {
@@ -687,8 +694,14 @@ footer {
         width: 124px;
     }
 
+    .solution-text {
+        display: flex;
+        flex-direction: column;
+    }
+
     .solution-text button {
         margin-top: 8px;
+        align-self: center;
     }
 
     .comparisons-container {
@@ -721,8 +734,14 @@ footer {
         margin-top: 24px;
     }
 
+    .about-text {
+        display: flex;
+        flex-direction: column;
+    }
+
     .about-text button {
         margin-top: 8px;
+        align-self: center;
     }
 
     .testimonials-container {
@@ -743,6 +762,15 @@ footer {
     .faq-container {
         flex-direction: column;
         margin: 56px 0;
+    }
+
+    .faq-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-text button {
+        align-self: center;
     }
 
     .faq-questions {
