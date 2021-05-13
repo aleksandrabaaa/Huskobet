@@ -24,6 +24,7 @@ function appendContents(contents) {
       htmlTemplate += `
         <div>
             <img src="${content.img}">
+            <p>${content.category}</p>
             <h3>${content.title}</h3>
             <p>${content.text}</p>
         </div>

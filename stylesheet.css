@@ -39,7 +39,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
     color: var(--navyblue);
-    margin: 0 0 24px 0;
+    margin: 0 0 16px 0;
 }
 
 h3 {
@@ -177,7 +177,9 @@ li {
 }
 
 .toggle-btn p {
-    font-weight: 500;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
 }
 
 .switch {
@@ -261,10 +263,11 @@ li {
 
 .case-box p {
     display: inline-block;
-    margin-right: 64px;
+    margin-right: 32px;
+    width: 148px;
 }
 
-.case-box p:nth-child(1) {
+.case-box p:nth-of-type(1) {
     margin-left: 24px;
 }
 
@@ -272,7 +275,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding: 8px 24px;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -331,8 +334,12 @@ li {
     margin-right: 0;
 }
 
-.service-box div h3 {
-    margin: 8px 0;
+.service-box p:first-of-type {
+    margin-left: 4px 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--green);
 }
 
 .service-box p {
@@ -474,7 +481,7 @@ li {
 
 .files-white-box {
     width: 100%;
-    height: 648px;
+    height: 548px;
     /* padding: 12px 12px 0 12px; */
     margin-top: 24px;
     margin-bottom: 32px;
@@ -489,11 +496,23 @@ li {
 
 .document {
     display: inline-block;
-    margin-right: 88px;
+    margin-right: 28px;
     font-family: Roboto;
     font-style: italic;
     font-weight: 300;
     font-size: .75em;
+}
+
+.document:nth-of-type(1) {
+    width: 74px;
+}
+
+.document:nth-of-type(2) {
+    width: 148px;
+}
+
+.document:nth-of-type(3) {
+    width: 74px;
 }
 
 .file-example {
@@ -591,7 +610,7 @@ li {
 
 .calendar-white-box {
     width: 100%;
-    height: 648px;
+    height: 548px;
     /* padding: 24px 16px; */
     margin-top: 24px;
 
@@ -631,7 +650,7 @@ li {
     width: 340px;
     display: flex;
     align-items: center;
-    margin-bottom: -440px;
+    margin-bottom: -16px;
     margin-top: auto;
 }
 
@@ -676,11 +695,11 @@ li {
 } */
 
 .gratis-services-box {
-    width: 400px;
+    width: 380px;
     height: 456px;
     float: right;
     /* background: white; */
-    padding: 84px 32px 0 16px;
+    padding: 77px 32px 0 16px;
 }
 
 .service-example img {
@@ -782,6 +801,10 @@ li {
         padding: 32px 16px 0 16px;
     }
 
+    .home-cases .case-box:nth-of-type(2) {
+        margin-bottom: 32px;
+    }
+
     .case-box {
         width: 840px;
         height: 80px;
@@ -792,10 +815,6 @@ li {
 
     .case-box img {
         margin: 0 16px;
-    }
-
-    .active, .pending, .closed {
-        width: 148px;
     }
 
     .status-mobile {
@@ -817,11 +836,22 @@ li {
 
     .file-example p {
         margin-right: 24px;
-        max-width: 142px;
+    }
+
+    .file-example p:nth-of-type(1) {
+        width: 74px;
+    }
+
+    .file-example p:nth-of-type(2) {
+        width: 148px;
+    }
+
+    .file-example p:nth-of-type(3) {
+        width: 74px;
     }
 
     .chat-box {
-        height: 648px;
+        height: 548px;
     }
 
     .message-container {
@@ -907,7 +937,7 @@ li {
 
     .articles-container {
         max-width: 1255px;
-        margin: 24px 0 0 0;
+        margin: 32px 0 0 0;
     }
     
     .article-example {
@@ -1065,7 +1095,6 @@ li {
     }
 
     .active, .pending, .closed{
-        width: 100px;
         margin: 12px 16px 0 0;
         float: right;        
     }
