@@ -306,19 +306,37 @@ li {
 }
 
 .service-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.service-box div {
     width: 237px;
     height: auto;
     padding: 16px;
+    margin-right: 16px;
     text-align: center;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     background: white;
-    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
+    box-shadow: 0px 5px 8px rgb(0 67 101 / 25%);
     border-radius: 20px;
 }
 
+.service-box div:nth-child(3) {
+    margin-right: 0;
+}
+
+.service-box div h3 {
+    margin: 8px 0;
+}
+
 .service-box p {
-    font-size: 1em;
+    margin: 8px 0;
 }
 
 /* cases content */

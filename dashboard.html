@@ -118,28 +118,9 @@
         <a href="#" style="float: right;">See all services</a>
 
         <div>
-            <div class="service-box">
-                <img src="/img/kickoff-service.png">
-                <h3>Kick-off meeting</h3>
-                <p>We offer our members a free start-up meeting, where together with...</p>
-                <a href="#">Read more</a>
-            </div>
-
-            <div class="service-box" style="margin-left: 16px;">
-                <img src="/img/purchase-service.png">
-                <h3>Purchase agreement</h3>
-                <p>The buyer's advisor handles the guidance and review of all conditions...</p>
-                <a href="#">Read more</a>
-            </div>
-
-            <div class="service-box" style="margin-left: 16px;">
-                <img src="/img/sketch-service.png">
-                <h3>Sketch drawing</h3>
-                <p>A sketch project is prepared to help you reach your dreams from idea to completed...</p>
-                <a href="#">Read more</a>
-            </div>
+            <div id="content-container" class="service-box"></div>
         </div>
-</div>
+    </div>
 </div>
 
 </section>
@@ -245,6 +226,7 @@
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
                 </div>
             </div>
+            <!-- <div id="content-container"></div> -->
     </div>
 </section>
 
@@ -874,6 +856,13 @@
         </div>
     </div>
 </section>
+
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+<script src="firebase-setup.js"></script>
+<script src="app.js"></script>
 
 <!-----SPA----->
 <script src="spa.js"></script>
