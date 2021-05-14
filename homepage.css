@@ -194,9 +194,9 @@ h4 {
 
 .icon-bcg {
     position: relative;
-    height: 80px;
-    width: 80px;
-    transform: translate(16px, -16px);
+    height: 64px;
+    width: 64px;
+    transform: translate(16px, -12px);
     border-radius: 50%;
     background: var(--lightblue);
 }
@@ -739,6 +739,10 @@ footer {
 
     .welcome-content {
         margin-bottom: 24px;
+    }
+
+    .welcome-content div:nth-of-type(2) {
+        margin-left: 24px;
     }
 
     .welcome-content p {
