@@ -252,12 +252,19 @@ h4 {
 }
 
 .number-box h3 {
-    margin: 0;
+    margin: 8px 0;
 }
 
 .number-box p {
-    max-width: 280px;
     margin: 8px 0;
+    max-width: 280px;
+}
+
+.value {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 /* comparison */
@@ -329,7 +336,7 @@ h4 {
 
 .about-text button {
     background: var(--navyblue);
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 /* testimonials */
@@ -466,12 +473,12 @@ footer {
 }
 
 .solution-text button {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 
 /* desktop */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 /* hero banner */
     .topnav-home a:nth-child(1) {
         margin-left: 56px;
@@ -558,6 +565,10 @@ footer {
         align-items: center;
     }
 
+    .faq-text button {
+        margin-top: 16px;
+    }
+
     .question {
         width: 440px;
     }
@@ -584,8 +595,78 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-banner {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .area-box {
+        margin-right: 16px;
+        height: 208px;
+    }
+
+    .area-box:last-of-type {
+        margin-right: 0;
+    }
+
+    .area-box p:nth-of-type(1) {
+        font-size: 1em;
+    }
+
+    .comparisons-container div:first-child {
+        margin-right: 24px;
+    }
+
+    .list-box {
+        padding: 24px;
+    }
+
+    .solution-container {
+        flex-direction: column-reverse;
+        margin-bottom: 56px;
+    }
+
+    .solution-container img:nth-of-type(2) {
+        transform: translate(-64px, 132px);
+    }
+
+    .solution-text {
+        margin-top: 40px;
+    }
+
+    .about-us img {
+        width: 372px;
+    }
+
+    .testimonial{
+        padding: 8px;
+    }
+
+    .question {
+        width: 324px;
+    }
+
+    .question h4 {
+        margin: 8px 0;
+    }
+
+    .partners-container img {
+        overflow: hidden;
+        padding: 16px;
+    }
+}
+
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 /* hero banner */
     h1 {
         font-size: 1.25em;
@@ -622,6 +703,8 @@ footer {
     .area-box {
         margin-bottom: 56px;
         padding: 0 24px 24px 24px;
+        height: auto;
+        margin-right: 0;
     }
 
     .circle-box {
@@ -678,6 +761,7 @@ footer {
 
     .solution-container {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .solution-container div:nth-child(2) {
@@ -779,6 +863,7 @@ footer {
 
     .question {
         padding: 16px 24px;
+        width: auto;
     }
 
     .question h4 {
