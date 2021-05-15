@@ -25,13 +25,40 @@ function appendContents(contents) {
         <div>
             <img src="${content.img}">
             <p>${content.category}</p>
-            <h3>${content.title}</h3>
+            <h4>${content.title}</h4>
             <p>${content.text}</p>
-            <a>Get access</a>
+            <a href="#">Get access</a>
         </div>
       `;
     }
     document.querySelector('#content-container').innerHTML = htmlTemplate;
 }
 
-// console.log(doc);
+const _articleRef = _db.collection("articles");
+let _articles;
+
+_articleRef.orderBy("title").onSnapshot(snapshotData => {
+  _articles = [];
+  snapshotData.forEach(doc => {
+    let article = doc.data();
+    article.id = doc.id;
+    _articles.push(article);
+  });
+  appendArticles(_articles);
+});
+
+function appendArticles(articles) {
+  let htmlTemplate = "";
+  for (let article of articles) {
+    htmlTemplate += `
+      <div>
+          <img src="${article.img}">
+          <p>${article.category}</p>
+          <h4>${article.title}</h4>
+          <p>${article.text}</p>
+          <a href="#">Read more</a>
+      </div>
+    `;
+  }
+  document.querySelector('#articles-container').innerHTML = htmlTemplate;
+}
