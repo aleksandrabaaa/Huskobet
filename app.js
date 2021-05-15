@@ -1,10 +1,6 @@
 "use strict";
 
-// db.collection('contents').get().then((snaphot) => {
-//     console.log(snapshot.docs);
-
-// })
-
+//selected services on home page
 const _contentRef = _db.collection("contents");
 let _contents;
 
@@ -34,6 +30,7 @@ function appendContents(contents) {
     document.querySelector('#content-container').innerHTML = htmlTemplate;
 }
 
+//articles on member club
 const _articleRef = _db.collection("articles");
 let _articles;
 
@@ -61,4 +58,34 @@ function appendArticles(articles) {
     `;
   }
   document.querySelector('#articles-container').innerHTML = htmlTemplate;
+}
+
+//free services on member club
+const _serviceRef = _db.collection("freeServices");
+let _freeServices;
+
+_serviceRef.orderBy("title").onSnapshot(snapshotData => {
+  _freeServices = [];
+  snapshotData.forEach(doc => {
+    let freeService = doc.data();
+    freeService.id = doc.id;
+    _freeServices.push(freeService);
+  });
+  appendServices(_freeServices);
+});
+
+function appendServices(freeServices) {
+  let htmlTemplate = "";
+  for (let freeService of freeServices) {
+    htmlTemplate += `
+      <div>
+          <img src="${freeService.img}">
+          <p>${freeService.category}</p>
+          <h4>${freeService.title}</h4>
+          <p>${freeService.text}</p>
+          <a href="#">Read more</a>
+      </div>
+    `;
+  }
+  document.querySelector('#service-example').innerHTML = htmlTemplate;
 }

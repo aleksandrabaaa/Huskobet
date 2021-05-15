@@ -346,6 +346,10 @@ li {
     margin: 8px 0;
 }
 
+.service-box h4 {
+    margin: 8px 0 0 0;
+}
+
 /* cases content */
 #cases h2 {
     display: inline-block;
@@ -932,12 +936,6 @@ li {
         border-radius: 20px;
     }
 
-    /* member club */
-    /* .articles-flexbox {
-        display: flex; 
-        justify-content: space-between;
-    } */
-
     .articles-container {
         max-width: 1255px;
         margin: 32px 0 0 0;
@@ -989,7 +987,7 @@ li {
         display: none;
     }
 
-    .service-example {
+    .service-example div{
         width: auto;
         height: 107px;
         padding: 16px;
