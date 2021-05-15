@@ -309,7 +309,11 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
 
+.service-box a {
+    text-decoration: underline;
+    margin-top: 16px;
 }
 
 .service-box div {
@@ -587,6 +591,9 @@ li {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
 }
 
 .dropdown-content a:hover {
@@ -979,7 +986,7 @@ li {
 }
 
 /* mobile screen */
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 /* mobile general */
     .page {
         /* min-height: calc(100vh - 110px); */

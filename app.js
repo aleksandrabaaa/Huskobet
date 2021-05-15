@@ -27,18 +27,11 @@ function appendContents(contents) {
             <p>${content.category}</p>
             <h3>${content.title}</h3>
             <p>${content.text}</p>
+            <a>Get access</a>
         </div>
       `;
     }
     document.querySelector('#content-container').innerHTML = htmlTemplate;
 }
-
-it("should order and limit", () => {
-    let _contentRef = db.collection("contents");
-    // [START order_and_limit]
-    _contentRef.orderBy("title").limit(3);
-    // [END order_and_limit]
-});
-
 
 // console.log(doc);

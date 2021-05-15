@@ -179,14 +179,18 @@
         <!-- Cases -->
         <div class="home-cases">
             <h2>Cases</h2>
+
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Type</a>
-                  <a href="#">Name</a>
+                <div id="sortCasesDropdown" class="dropdown-content">
+                  <a href="#">Status</a>
+                  <a href="#">Company</a>
                   <a href="#">Date</a>
                 </div>
               </div>
+
+            <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
+            
                 <a href="#case-example" style="text-decoration: none;"><div class="case-box">
                     <div><div class="active status-mobile">Active</div></div>
                     <p><span>Service:</span><br>Land trade</p>
@@ -387,7 +391,7 @@
         <div style="margin-top: 24px; display: flow-root;">  
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Sort by<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
-                <div id="myDropdown" class="dropdown-content">
+                <div id="myDropdownMobile" class="dropdown-content">
                 <a href="#">Type</a>
                 <a href="#">Name</a>
                 <a href="#">Date</a>
@@ -745,7 +749,7 @@
                 <!-- <input type="text" name="gender" value="Gender" style="width: 150px;"><br> -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
-                    <div id="myDropdown2" class="dropdown-content">
+                    <div id="genderDropdown" class="dropdown-content">
                       <a href="#">Female</a>
                       <a href="#">Male</a>
                       <a href="#">Other</a>
@@ -823,7 +827,7 @@
                 <!-- <input type="text" name="gender" value="Gender"><br> -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
-                    <div id="myDropdown" class="dropdown-content">
+                    <div id="genderDropdownMobile" class="dropdown-content">
                       <a href="#">Female</a>
                       <a href="#">Male</a>
                       <a href="#">Other</a>
@@ -873,40 +877,27 @@
 <script>
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
+      document.getElementById("sortCasesDropdown").classList.toggle("show");
+      document.getElementById("genderDropdown").classList.toggle("show");
+      document.getElementById("genderDropdownMobile").classList.toggle("show");
+      document.getElementById("myDropdownMobile").classList.toggle("show");
     }
 //make the dropdown disappear when clicking outside the dropdown
-    window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+//     window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     let dropdowns = document.getElementsByClassName("dropdown-content");
+//     let i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       let openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 </script>
 
-<script>
-    function myFunction() {
-      document.getElementById("myDropdown2").classList.toggle("show");
-    }
-//make the dropdown disappear when clicking outside the dropdown
-    window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+
 
 
 </body>
