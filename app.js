@@ -20,9 +20,9 @@ function appendContents(contents) {
       htmlTemplate += `
         <div>
             <img src="${content.img}">
-            <p>${content.category}</p>
+            <p class="category">${content.category}</p>
             <h4>${content.title}</h4>
-            <p>${content.text}</p>
+            <p class="cut-text">${content.text}</p>
             <a href="#">Get access</a>
         </div>
       `;
@@ -48,12 +48,14 @@ function appendArticles(articles) {
   let htmlTemplate = "";
   for (let article of articles) {
     htmlTemplate += `
-      <div>
+      <div class="article-box">
           <img src="${article.img}">
-          <p>${article.category}</p>
+          <div>
+          <p class="category">${article.category}</p>
           <h4>${article.title}</h4>
-          <p>${article.text}</p>
+          <p class="cut-text">${article.text}</p>
           <a href="#">Read more</a>
+          </div>
       </div>
     `;
   }
@@ -78,14 +80,18 @@ function appendServices(freeServices) {
   let htmlTemplate = "";
   for (let freeService of freeServices) {
     htmlTemplate += `
-      <div>
+      <div class="service">
           <img src="${freeService.img}">
-          <p>${freeService.category}</p>
+          <div>
+          <p class="category">${freeService.category}</p>
           <h4>${freeService.title}</h4>
-          <p>${freeService.text}</p>
+          <p class="cut-text">${freeService.text}</p>
           <a href="#">Read more</a>
+          </div>
       </div>
     `;
   }
   document.querySelector('#service-example').innerHTML = htmlTemplate;
+  document.querySelector('#service-example-mobile').innerHTML = htmlTemplate;
+
 }

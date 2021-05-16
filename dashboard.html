@@ -317,7 +317,20 @@
             <!-- Calendar -->
             <div class="calendar-container">
                 <h3>Calendar</h3>
-                    <div class="calendar-white-box"></div>
+                    <div class="calendar-white-box">
+                        
+                        <h4 style="text-align: center; padding-top: 24px;">April 2021</h4>
+                        <ul class="dayName">
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                            <li>Sun</li>
+                        </ul>
+                        <div id="app-calendar"></div>
+                    </div>
             </div>
 
             <!-- Chat -->
@@ -449,7 +462,17 @@
         <h3>Calendar</h3>
         <a href="#case-example" style="margin-bottom: 24px;"><span class="iconify" data-inline="false" data-icon="carbon:redo" data-flip="horizontal" style="font-size: 1.5em; color: #002173; vertical-align: bottom; margin-right: 8px;"></span>Go back to the case</a>
         <div class="mobile-white-bcg">
-
+            <h4 style="text-align: center; padding-top: 24px;">April 2021</h4>
+                        <ul class="dayName">
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                            <li>Sun</li>
+                        </ul>
+                        <div id="app-calendar"></div>
         </div>
     </div>
 
@@ -491,29 +514,7 @@
         <h3 style="display: inline-block;">Gratis services</h3>
         <a href="#" style="float: right;">See all services</a>
         
-            <div id="service-example" class="service-example">
-                <!-- <div>
-                <img src="/img/kick-off-service.png" alt="Kick-off service">
-                    <p style="font-weight: bold;">Kick-off meeting</p>
-                    <p>We offer our members a free start-up meeting, where together with an  professional advisor you will get a...</p>
-                </div> -->
-        </div>
-        
-            <!-- <div class="service-example">
-                <div>
-                    <img src="/img/financialadvice-service.png" alt="Financial advice service">
-                    <p style="font-weight: bold;">Financial advice</p>
-                    <p>No matter which bank leads your finances with our Financial advice you will have an professional and quick help...</p>
-                </div>
-            </div>
-        
-            <div class="service-example">
-                <div>
-                    <img src="/img/salesevaluation-service.png" alt="Sales evaluation service">
-                    <p style="font-weight: bold;">Sales evaluation</p>
-                    <p>Get professional help within Sales evaluation service. This will give you a brief start before purchasing your...</p>
-                </div>
-            </div> -->
+            <div id="service-example" class="service-example"></div>
         
     </div>
 
@@ -612,29 +613,13 @@
                 <a href="#" style="float: right;">See all services</a>
                 <div class="articles-flexbox">
 
-                    <div class="service-example">
-                        <img src="/img/kick-off-service.png" alt="Kick-off service">
+                    <div id="service-example-mobile" class="service-example">
+                        <!-- <img src="/img/kick-off-service.png" alt="Kick-off service">
                         <div>
                             <p style="font-weight: bold;">Kick-off meeting</p>
                             <p>We offer our members a free start-up meeting, where together with an  professional advisor you will get a...</p>
-                        </div>
+                        </div> -->
                     </div>
-
-                    <div class="service-example">
-                        <img src="/img/financialadvice-service.png" alt="Financial advice service">
-                        <div>
-                            <p style="font-weight: bold;">Financial advice</p>
-                            <p>No matter which bank leads your finances with our Financial advice you will have an professional and quick help...</p>
-                        </div>
-                    </div>
-
-                    <div class="service-example">
-                        <img src="/img/salesevaluation-service.png" alt="Sales evaluation service">
-                        <div>
-                            <p style="font-weight: bold;">Sales evaluation</p>
-                            <p>Get professional help within Sales evaluation service. This will give you a brief start before purchasing your...</p>
-                        </div>
-                    </div>       
 
                 </div>
             </div>
@@ -791,7 +776,6 @@
 
                 <span>
                 <label>Gender</label><br>
-                <!-- <input type="text" name="gender" value="Gender"><br> -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
                     <div id="genderDropdownMobile" class="dropdown-content">
@@ -864,8 +848,7 @@
 // }
 </script>
 
-
-
+<script src="calendar.js"></script>
 
 </body>
 
