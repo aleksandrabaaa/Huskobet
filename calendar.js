@@ -1,11 +1,13 @@
-const calendar = document.querySelector("#app-calendar");
-console.log(calendar);
+const calendarContainers = document.querySelectorAll(".app-calendar");
+  console.log(calendarContainers);
 
-for (let day = 1; day <= 31; day++) {
+  for (let calendarContainer of calendarContainers) {
+    
+    for(let day = 1; day <= 31; day++){
+      calendarContainer.insertAdjacentHTML("beforeend",
+      `<div class="day">${day}</div>`
+      );
+    }
 
-calendar.insertAdjacentHTML("beforeend", 
-`<div class="day">${day}</div>`
-);
-
-}
+  }
 

@@ -609,7 +609,14 @@ li {
     border-radius: 20px;
 }
 
-#app-calendar {
+.month-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8px 0 8px;
+}
+
+.app-calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -821,8 +828,9 @@ li {
     
     .updates-box {
         width: 380px;
-        height: 984px;
-        float: right;
+        height: 100%;
+        position: fixed;
+        right: 0;
         background: white;
         padding: 32px 16px 0 16px;
     }
