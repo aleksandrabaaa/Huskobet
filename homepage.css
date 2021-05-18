@@ -70,6 +70,11 @@ h4 {
     font-size: 2em;
 }
 
+.topnav-home a:last-child:hover {
+    opacity: .5;
+    transition: .5s;
+}
+
 /* hero banner */
 .hero-banner {
     background: url(/img/hero-banner.jpg);
@@ -131,8 +136,10 @@ h4 {
     flex-direction: column;
     text-align: center;
 
-    background: white;
-    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 67, 101, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     border-radius: 32px;
 }
 
@@ -164,8 +171,10 @@ h4 {
     display: flex;
     align-items: center;
 
-    background: white;
-    box-shadow: 0px 16px 40px rgb(112 144 176 / 8%);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 67, 101, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
 }
 
 .circle svg {
@@ -278,7 +287,9 @@ h4 {
     align-items: center;
 
     background: white;
-    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    border: 1px solid rgba(0, 67, 101, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     border-radius: 32px;
 }
 
@@ -293,7 +304,8 @@ h4 {
 .right-blue {
     color: white;
     background: #002173;
-    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     border-radius: 32px;
 }
 
@@ -400,8 +412,9 @@ h4 {
     justify-content: space-between;
     align-items: center;
 
-    background: white;
-    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.08);
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 8px rgba(0, 67, 101, 0.25);
     border-radius: 32px;
 }
 
@@ -550,7 +563,7 @@ footer {
 
     .testimonials-container {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 56px 0;
         padding: 56px;
     }
