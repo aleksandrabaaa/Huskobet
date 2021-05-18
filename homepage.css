@@ -809,6 +809,10 @@ footer {
         flex-direction: column;
     }
 
+    .comparisons-container div:first-child {
+        margin-right: 0;
+    }
+
     .list-box {
         padding: 24px;
     }

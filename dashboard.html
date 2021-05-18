@@ -530,7 +530,7 @@
                         <span class="iconify" data-inline="false" data-icon="carbon:chevron-left" style="font-size: 1.5em; color: #002173; opacity: .7;"></span>
                         <span class="iconify" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
                     </div>
-                <div style="display: flex;">
+                <div class="horizontal-scroll" style="display: flex;">
                     <div class="discount-example">
                         <img src="/img/spotify.png" alt="Spotify logo">
                         <p class="discount-headline">Spotify</p>
@@ -566,7 +566,7 @@
                     <span class="iconify" data-inline="false" data-icon="carbon:chevron-left" style="font-size: 1.5em; color: #002173; opacity: .7;"></span>
                     <span class="iconify" data-inline="false" data-icon="carbon:chevron-right" style="font-size: 1.5em; color: #002173;"></span>
                 </div>
-                <div style="display: flex;">
+                <div class="horizontal-scroll" style="display: flex;">
                     <div class="test-example">
                         <span class="iconify" data-inline="false" data-icon="carbon:home" style="font-size: 2.5em; color: #002173;"></span>
                         <p>Do you want to buy a house? Take a free test and check of you‘re ready!</p>
@@ -747,8 +747,8 @@
             
             <form>
                 <span>
-                <label>Name</label><br>     <!-- for="name" -->
-                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>    <!-- id="fname" -->
+                <label>Name</label><br>
+                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>
                 </span>
 
                 <span>
@@ -808,6 +808,8 @@
                 <input type="text" onfocus="this.value=''" name="newpassword" value="New password"><br>
                 </span>
             </form> 
+
+            <button type="submit" class="save-button">Save the changes</button>
 
         </div>
     </div>

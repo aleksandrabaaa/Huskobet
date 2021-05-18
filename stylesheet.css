@@ -822,8 +822,6 @@ li {
     .updates-box {
         width: 380px;
         height: 984px;
-        /* left: 1396px;
-        top: 80px; */
         float: right;
         background: white;
         padding: 32px 16px 0 16px;
@@ -897,8 +895,6 @@ li {
     .discounts-container, .test-container {
         margin: 0 0 24px 0;
         max-width: 840px;
-        /* display: flex;
-        flex-direction: row; */
     }
 
     .discount-example, .test-example {
@@ -1130,7 +1126,7 @@ li {
     }
 
     .updates-box {
-        height: 724px;
+        height: 624px;
         float: right;
         padding: 0 16px;
     }
@@ -1275,7 +1271,7 @@ li {
         font-size: .75em;
     }
 
-    .discounts-container, .test-container {
+    .horizontal-scroll {
         overflow: auto;
         white-space: nowrap;
     }
@@ -1374,8 +1370,12 @@ li {
 
     .personal-data {
         width: 100%;
-        height: 864px;
+        height: 100%;
         margin-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
         background: white;
         border-radius: 20px;
