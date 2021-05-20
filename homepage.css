@@ -89,7 +89,7 @@ h4 {
 
 /* hero banner */
 .hero-banner {
-    background: url(/img/hero-banner.jpg);
+    background: url(./img/hero-banner.jpg);
     margin-top: 80px;
     display: flex;
     justify-content: center;
