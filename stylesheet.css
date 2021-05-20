@@ -924,6 +924,11 @@ li {
         padding: 16px;
     }
 
+    .flex-box-profile {
+        display: flex;
+        align-items: center;
+    }
+
     .profile-nav {
         width: auto;
         height: 524px;
@@ -961,7 +966,7 @@ li {
     }
 
     .personal-data {
-        width: 768px;
+        width: 100%;
         height: 524px;
         /* height: 842px; */
         padding: 24px 16px;
