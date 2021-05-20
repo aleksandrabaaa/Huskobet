@@ -652,77 +652,79 @@
                         <span class="iconify arrow" data-inline="false" data-icon="carbon:chevron-right"></span>
                     </div>
                 </div>
+
+                <div class="personal-data">
+                    <form>
+                        <span>
+                        <label>Name</label><br>
+                        <input type="text" onfocus="this.value=''" name="name" value="Name"><br>
+                        </span>
+        
+                        <span style="margin-right: 0;">
+                        <label>Surname</label><br>
+                        <input type="text" onfocus="this.value=''" name="surname" value="Surname"><br>
+                        </span>
+        
+                        <span>
+                        <label>Address</label><br>
+                        <input type="text" onfocus="this.value=''" name="address" value="Address"><br>
+                        </span>
+                        
+                        <span>
+                        <label>City</label><br>
+                        <input type="text" onfocus="this.value=''" name="city" value="City" style="width: 150px;"><br>
+                        </span>
+        
+                        <span style="margin-right: 0;">
+                        <label>Zip code</label><br>
+                        <input type="text" onfocus="this.value=''" name="zipcode" value="Zip code" style="width: 150px;"><br>
+                        </span>
+        
+                        <span>
+                        <label>Date of birth</label><br>
+                        <input type="text" onfocus="this.value=''" name="birthday" value="Date of birth" style="width: 150px;"><br>
+                        </span>
+        
+                        <span>
+                        <label>Gender</label><br>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
+                            <div id="genderDropdown" class="dropdown-content">
+                              <a href="#">Female</a>
+                              <a href="#">Male</a>
+                              <a href="#">Other</a>
+                            </div>
+                          </div>
+                        </span>
+        
+                        <span style="display:table; clear:both;">
+                        <label>Email address</label><br>
+                        <input type="text" onfocus="this.value=''" name="email" value="Email address"><br>
+                        </span>
+        
+                        <span>
+                        <label>Phone number</label><br>
+                        <input type="number" onfocus="this.value=''" name="phoneno" value="Phone number" style="width: 150px;"><br>
+                        </span>
+        
+                        <span>
+                        <label>Current password</label><br>
+                        <input type="text" onfocus="this.value=''" name="currentpassword" value="Current password"><br>
+                        </span>
+        
+                        <span style="margin-right: 0;">
+                        <label>New password</label><br>
+                        <input type="text" onfocus="this.value=''" name="newpassword" value="New password"><br>
+                        </span>
+                      </form> 
+                    
+                  <button type="submit" class="save-button">Save the changes</button>
+        
+                </div>
         </div>
 
         <!-- Personal data content -->
-        <div class="personal-data">
-            <form>
-                <span>
-                <label>Name</label><br>
-                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>
-                </span>
-
-                <span style="margin-right: 0;">
-                <label>Surname</label><br>
-                <input type="text" onfocus="this.value=''" name="surname" value="Surname"><br>
-                </span>
-
-                <span>
-                <label>Address</label><br>
-                <input type="text" onfocus="this.value=''" name="address" value="Address"><br>
-                </span>
-                
-                <span>
-                <label>City</label><br>
-                <input type="text" onfocus="this.value=''" name="city" value="City" style="width: 150px;"><br>
-                </span>
-
-                <span style="margin-right: 0;">
-                <label>Zip code</label><br>
-                <input type="text" onfocus="this.value=''" name="zipcode" value="Zip code" style="width: 150px;"><br>
-                </span>
-
-                <span>
-                <label>Date of birth</label><br>
-                <input type="text" onfocus="this.value=''" name="birthday" value="Date of birth" style="width: 150px;"><br>
-                </span>
-
-                <span>
-                <label>Gender</label><br>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
-                    <div id="genderDropdown" class="dropdown-content">
-                      <a href="#">Female</a>
-                      <a href="#">Male</a>
-                      <a href="#">Other</a>
-                    </div>
-                  </div>
-                </span>
-
-                <span style="display:table; clear:both;">
-                <label>Email address</label><br>
-                <input type="text" onfocus="this.value=''" name="email" value="Email address"><br>
-                </span>
-
-                <span>
-                <label>Phone number</label><br>
-                <input type="number" onfocus="this.value=''" name="phoneno" value="Phone number" style="width: 150px;"><br>
-                </span>
-
-                <span>
-                <label>Current password</label><br>
-                <input type="text" onfocus="this.value=''" name="currentpassword" value="Current password"><br>
-                </span>
-
-                <span style="margin-right: 0;">
-                <label>New password</label><br>
-                <input type="text" onfocus="this.value=''" name="newpassword" value="New password"><br>
-                </span>
-              </form> 
-            
-          <button type="submit" class="save-button">Save the changes</button>
-
-        </div>
+       
     </div>
 </section>
 
