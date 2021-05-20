@@ -60,15 +60,25 @@ h4 {
 }
 
 /* side navigation desktop */
-.tabbar a {
+.tabbar a:not(:first-child) {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
+    opacity: .5;
+}
+
+.tabbar a:first-child:hover {
+    opacity: .5;
+    transition: .3s;
 }
 
 .tabbar a:hover {
-    opacity: .5;
+    opacity: 1;
     transition: .3s;
+}
+
+.tabbar a.active {
+    opacity: 1;
 }
 
 .tabbar img {
@@ -269,7 +279,7 @@ li {
     margin-left: 24px;
 }
 
-.active, .pending, .closed {
+.active-status, .pending-status, .closed-status {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,17 +291,17 @@ li {
     border-radius: 20px;        
 }
 
-.active {
+.active-status {
     color: var(--green);
     background: rgba(43, 222, 141, 0.15);
 }
 
-.pending {
+.pending-status {
     color: var(--orange);
     background: rgba(251, 178, 62, 0.15);
 }
 
-.closed {
+.closed-status {
     color: var(--red);
     background: rgba(219, 58, 42, 0.15);
 }
@@ -767,7 +777,7 @@ li {
 }
 
 /* desktop screen */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .tabbar {
         height: 100%;
         width: 264px;
@@ -1031,7 +1041,7 @@ li {
 }
 
 /* mobile screen */
-@media (max-width: 414px) {
+@media (max-width: 768px) {
 /* mobile general */
     .page {
         /* min-height: calc(100vh - 110px); */
@@ -1163,7 +1173,7 @@ li {
         margin: 0;
     }
 
-    .active, .pending, .closed{
+    .active-status, .pending-status, .closed-status{
         margin: 12px 16px 0 0;
         float: right;        
     }

@@ -95,21 +95,21 @@
                 <p><span>Service:</span><br>Land trade</p>
                 <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
                 <p><span>Advisor:</span><br>Tobias Elmstrøm</p>
-                <div class="active">Active</div>
+                <div class="active-status">Active</div>
                 <img src="/img/open-icon.svg" alt="Open icon svg">
             </div></a>
             <div class="case-box">
                 <p><span>Service:</span><br>Financial advise</p>
                 <p><span>Company:</span><br>BoFinans Aarhus</p>
                 <p><span>Advisor:</span><br>Not assigned</p>
-                <div class="pending">Pending</div>
+                <div class="pending-status">Pending</div>
                 <img src="/img/open-icon.svg" alt="Open icon svg">
             </div>
             <div class="case-box">
                 <p><span>Service:</span><br>Construction report</p>
                 <p><span>Company:</span><br>BoTjek</p>
                 <p><span>Advisor:</span><br>Anders Nielsen</p>
-                <div class="active">Active</div>
+                <div class="active-status">Active</div>
                 <img src="/img/open-icon.svg" alt="Open icon svg">
         
             </div>
@@ -194,45 +194,44 @@
             <div class="search-upload-btn"><span class="iconify" data-inline="false" data-icon="carbon:search" style="font-size: 1.25em; color: #002173; margin: 0 auto;"></span></div>
             
                 <a href="#case-example" style="text-decoration: none;"><div class="case-box">
-                    <div class="active status-mobile">Active</div>
+                    <div class="active-status status-mobile">Active</div>
                     <p><span>Service:</span><br>Land trade</p>
                     <p><span>Company:</span><br>Grotkjær Elmstrøm</p>
                     <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Tobias Elmstrøm</p>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
-                    <div class="active status-desktop">Active</div>
+                    <div class="active-status status-desktop">Active</div>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
                 </div></a>
                 <div class="case-box">
-                    <div class="pending status-mobile">Pending</div>
+                    <div class="pending-status status-mobile">Pending</div>
                     <p><span>Service:</span><br>Financial advise</p>
                     <p><span>Company:</span><br>BoFinans Aarhus</p>
                     <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Not assigned</p>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
-                    <div class="pending status-desktop">Pending</div>
+                    <div class="pending-status status-desktop">Pending</div>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
                 </div>
 
                 <div class="case-box">
-                    <div class="active status-mobile">Active</div>
+                    <div class="active-status status-mobile">Active</div>
                     <p><span>Service:</span><br>Construction report</p>
                     <p><span>Company:</span><br>BoTjek</p>
                     <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Anders Nielsen</p>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
-                    <div class="active status-desktop">Active</div>
+                    <div class="active-status status-desktop">Active</div>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
                 </div>
 
                 <div class="case-box">
-                    <div class="closed status-mobile">Closed</div>
+                    <div class="closed-status status-mobile">Closed</div>
                     <p><span>Service:</span><br>Kick-off meeting</p>
                     <p><span>Company:</span><br>BoFinans</p>
                     <p style="display: inline-block; margin-bottom: 12px;"><span>Advisor:</span><br>Jesper Hansen</p>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-mobile" style="float: right; margin: 16px;">
-                    <div class="closed status-desktop">Closed</div>
+                    <div class="closed-status status-desktop">Closed</div>
                     <img src="/img/open-icon.svg" alt="Open icon svg" class="status-desktop">
                 </div>
             </div>
-            <!-- <div id="content-container"></div> -->
     </div>
 </section>
 
@@ -355,7 +354,6 @@
                             </div>
                             
                         </div>
-                        <!-- <span class="iconify" data-inline="false" data-icon="carbon:send" style="position: absolute;"></span> -->
                         <input type="text" onfocus="this.value=''" name="message" value="Write a message here" class="message-input">
                     </div>
             </div>
@@ -504,9 +502,7 @@
                                 A, felis mattis quis massa at.</p>
                             </div>
                     </div>
-                    
                 </div>
-                
                 <input type="text" onfocus="this.value=''" name="message" value="Write a message here" class="message-input">
             </div>
         </div>
@@ -598,21 +594,13 @@
             
             </div>
         </div>
+
             <!-- Articles -->
             <div class="articles-container">
                 <h3 style="display: inline-block;">Latest articles</h3>
                 <a href="#" style="float: right;">See all articles</a>
                 
-                    <div id="articles-container" class="article-example">
-                        <!-- <div>
-                        <img src="/img/article1.jpg" alt="Article img">
-                        </div>
-                        <div>
-                        <h4>Housing prices in March 2021 set new records</h4>
-                        <p>In March 2021, house prices rose again and they are now being traded 12 percent higher than at the...</p><br>
-                        <a href="#">Read more</a>
-                        </div> -->
-                    </div>
+                    <div id="articles-container" class="article-example"></div>
                 
             </div>
 
@@ -622,13 +610,7 @@
                 <a href="#" style="float: right;">See all services</a>
                 <div class="articles-flexbox">
 
-                    <div id="service-example-mobile" class="service-example">
-                        <!-- <img src="/img/kick-off-service.png" alt="Kick-off service">
-                        <div>
-                            <p style="font-weight: bold;">Kick-off meeting</p>
-                            <p>We offer our members a free start-up meeting, where together with an  professional advisor you will get a...</p>
-                        </div> -->
-                    </div>
+                    <div id="service-example-mobile" class="service-example"></div>
 
                 </div>
             </div>
@@ -676,8 +658,8 @@
         <div class="personal-data">
             <form>
                 <span>
-                <label>Name</label><br>     <!-- for="name" -->
-                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>    <!-- id="fname" -->
+                <label>Name</label><br>
+                <input type="text" onfocus="this.value=''" name="name" value="Name"><br>
                 </span>
 
                 <span style="margin-right: 0;">
@@ -707,7 +689,6 @@
 
                 <span>
                 <label>Gender</label><br>
-                <!-- <input type="text" name="gender" value="Gender" style="width: 150px;"><br> -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Gender<span onclick="myFunction()" class="iconify" data-inline="false" data-icon="carbon:chevron-down" data-flip="horizontal" style="font-size: 1.25em; color: #002173; vertical-align: middle;"></span></button>
                     <div id="genderDropdown" class="dropdown-content">
@@ -844,19 +825,6 @@
       document.getElementById("genderDropdownMobile").classList.toggle("show");
       document.getElementById("myDropdownMobile").classList.toggle("show");
     }
-//make the dropdown disappear when clicking outside the dropdown
-//     window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     let dropdowns = document.getElementsByClassName("dropdown-content");
-//     let i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       let openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
 </script>
 
 <script src="calendar.js"></script>

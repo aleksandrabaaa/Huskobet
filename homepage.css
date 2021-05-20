@@ -48,6 +48,18 @@ h4 {
     font-size: 1em;
 }
 
+.green-button:hover {
+    background: #79EAB7;;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.blue-button:hover{
+    background: #334D8F;;
+    transition: .3s;
+    cursor: pointer;
+}
+
 /* top navigation */
 .topnav-home {
     overflow: hidden;
@@ -78,7 +90,6 @@ h4 {
 /* hero banner */
 .hero-banner {
     background: url(/img/hero-banner.jpg);
-    /* width: 100%; */
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -120,7 +131,6 @@ h4 {
 .home-wrapper {
     margin-right: auto;
     margin-left:  auto;
-    /* max-width: 960px; */
     padding-right: 56px;
     padding-left:  56px;
 }
@@ -195,7 +205,6 @@ h4 {
 }
 
 .welcome-content svg {
-    /* margin-right: 24px; */
     font-size: 4em;
     position: absolute;
     z-index: 100;
@@ -509,7 +518,7 @@ footer {
     .hero-banner .signup-btn {
         margin-top: 40px;
     }
-
+/* areas */
     .areas-container {
         bottom: 80px;
         justify-content: space-evenly;
@@ -519,17 +528,17 @@ footer {
     .area-box {
         padding: 24px;
     }
-
+/* welcome content */
     .column .welcome-content:nth-of-type(1) {
         margin-bottom: 40px;
     }
-
+/*  numbers */
     .numbers-container {
         flex-direction: row;
         justify-content: space-evenly;
         margin: 56px 0;
     }
-
+/*  solution */
     .solution-container {
         flex-direction: row;
         justify-content: space-around;
@@ -541,7 +550,7 @@ footer {
         position: absolute;
         right: 0; transform: translate(-156px, 132px);
     }
-
+/* comparison */
     .comparisons-container {
         flex-direction: row;
         justify-content: space-around;
@@ -554,13 +563,13 @@ footer {
     .list-items p {
         margin-top: 8px;
     }
-
+/* about us */
     .about-us {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-
+/* testimonials */
     .testimonials-container {
         flex-direction: row;
         justify-content: space-evenly;
@@ -571,7 +580,7 @@ footer {
     .testimonial p:nth-of-type(1) {
         height: 100px;
     }
-
+/* faq */
     .faq-container {
         flex-direction: row;
         justify-content: space-around;
@@ -585,7 +594,7 @@ footer {
     .question {
         width: 440px;
     }
-
+/* partners */
     .partners-container {
         margin: 56px 0;
         padding: 56px 0;
@@ -601,7 +610,7 @@ footer {
         cursor: pointer;
         transition: .3s;
     }
-
+/* footer */
     footer {
         padding: 24px 0;
     }
@@ -616,12 +625,12 @@ footer {
     h2 {
         font-size: 1.5em;
     }
-
+/* hero banner */
     .hero-banner {
         background-size: cover;
         background-position: 50%;
     }
-
+/* areas */
     .area-box {
         margin-right: 16px;
         height: 208px;
@@ -634,7 +643,7 @@ footer {
     .area-box p:nth-of-type(1) {
         font-size: 1em;
     }
-
+/* comparison */
     .comparisons-container div:first-child {
         margin-right: 24px;
     }
@@ -643,6 +652,7 @@ footer {
         padding: 24px;
     }
 
+/* solution */
     .solution-container {
         flex-direction: column-reverse;
         margin-bottom: 56px;
@@ -655,11 +665,11 @@ footer {
     .solution-text {
         margin-top: 40px;
     }
-
+/* about us */
     .about-us img {
         width: 372px;
     }
-
+/* testimonials */
     .testimonial{
         padding: 8px;
     }
@@ -671,7 +681,7 @@ footer {
     .question h4 {
         margin: 8px 0;
     }
-
+/* partners */
     .partners-container img {
         overflow: hidden;
         padding: 16px;
@@ -680,7 +690,6 @@ footer {
 
 /* mobile */
 @media (max-width: 414px) {
-/* hero banner */
     h1 {
         font-size: 1.25em;
     }
@@ -696,7 +705,7 @@ footer {
     .topnav-home a:nth-child(3) {
         margin-right: 24px;
     }
-
+/* hero banner */
     .hero-banner {
         padding: 0 24px;
         height: 375px;
@@ -708,7 +717,7 @@ footer {
     .hero-banner button {
         margin-top: 24px;
     }
-
+/* areas */
     .areas-container {
         flex-direction: column;
     }
@@ -737,7 +746,7 @@ footer {
         padding-right: 24px;
         padding-left: 24px;
     }
-
+/* welcome */
     .welcome-container {
         flex-direction: column;
     }
@@ -761,7 +770,7 @@ footer {
     .welcome-content p {
         margin: 8px 0 0 0;
     }
-
+/* numbers */
     .numbers-container {
         flex-direction: column;
         margin: 56px 0;
@@ -775,7 +784,7 @@ footer {
     .number-box:last-child {
         margin-bottom: 0;
     }
-
+/* solution */
     .solution-container {
         flex-direction: column;
         margin-bottom: 0;
@@ -804,7 +813,7 @@ footer {
         margin-top: 8px;
         align-self: center;
     }
-
+/* comparison */
     .comparisons-container {
         flex-direction: column;
     }
@@ -828,7 +837,7 @@ footer {
     .right-blue {
         margin-top: 32px;
     }
-
+/* about us */
     .about-us {
         flex-direction: column;
         align-items: center;
@@ -848,7 +857,7 @@ footer {
         margin-top: 8px;
         align-self: center;
     }
-
+/* testimonials */
     .testimonials-container {
         flex-direction: column;
         align-items: center;
@@ -863,7 +872,7 @@ footer {
     .testimonial:last-child {
         margin-bottom: 0;
     }
-
+/* faq */
     .faq-container {
         flex-direction: column;
         margin: 56px 0;
@@ -894,7 +903,7 @@ footer {
     .faq-text button {
         margin-top: 8px;
     }
-
+/* partners */
     .partners-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -906,7 +915,7 @@ footer {
         width: 80px;
         padding: 12px;
     }
-
+/* footer */
     footer {
         padding: 24px 8px;
     }
